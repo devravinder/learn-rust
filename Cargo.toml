@@ -20,6 +20,7 @@ resolver = "3" # resolver v3 is the default for edition 2024
 members = [
     "learn_10_core",
     "learn_20_ownership",
+    "learn_30_structs_enums",
 ]
 
 # Shared dependency versions live here so every member can reference them with

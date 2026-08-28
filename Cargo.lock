@@ -52,6 +52,10 @@ name = "learn_20_ownership"
 version = "0.1.0"
 
 [[package]]
+name = "learn_30_structs_enums"
+version = "0.1.0"
+
+[[package]]
 name = "libc"
 version = "0.2.189"
 source = "registry+https://github.com/rust-lang/crates.io-index"
