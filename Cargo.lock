@@ -3,13 +3,6 @@
 version = 4
 
 [[package]]
-name = "basic_01_core"
-version = "0.1.0"
-dependencies = [
- "rand",
-]
-
-[[package]]
 name = "cfg-if"
 version = "1.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -45,6 +38,13 @@ dependencies = [
  "libc",
  "r-efi",
  "rand_core",
+]
+
+[[package]]
+name = "learn_10_core"
+version = "0.1.0"
+dependencies = [
+ "rand",
 ]
 
 [[package]]

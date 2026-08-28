@@ -1,0 +1,27 @@
+# Root Cargo workspace manifest.
+#
+# A "workspace" groups multiple packages (crates) so they share ONE target/
+# directory and ONE Cargo.lock. This makes builds faster (dependencies compile
+# once) and lets you run any binary from the workspace root.
+#
+# NOTE ON BINARY NAMES + VS Code shortcut:
+#   Your keybinding runs `cargo run --bin ${fileBasenameNoExtension}`.
+#   In a workspace, `--bin <name>` is only unambiguous when the binary name is
+#   UNIQUE across every member crate. That is why every binary is prefixed with
+#   its folder number, e.g. learn_10_01_hello. Never reuse a binary name and the
+#   shortcut keeps working unchanged from anywhere in the workspace.
+#
+# Folder numbering uses gaps of 10 (learn_10_, learn_20_, ...) so we can insert a
+# new topic later (e.g. learn_25_) WITHOUT renaming everything.
+
+[workspace]
+resolver = "3" # resolver v3 is the default for edition 2024
+
+members = [
+    "learn_10_core",
+]
+
+# Shared dependency versions live here so every member can reference them with
+# `foo = { workspace = true }` and stay in sync.
+[workspace.dependencies]
+rand = "0.10.2"
