@@ -1,0 +1,18 @@
+[package]
+name = "proj_04_grpc"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "proj_04_grpc"
+path = "src/main.rs"
+
+[dependencies]
+tonic = { workspace = true }        # gRPC over HTTP/2
+tonic-prost = { workspace = true }  # prost codec integration for tonic 0.14
+prost = { workspace = true }        # protobuf message runtime
+tokio = { workspace = true }        # async runtime
+
+[build-dependencies]
+tonic-prost-build = { workspace = true } # compiles proto/*.proto at build time
+protoc-bin-vendored = { workspace = true } # bundled protoc (no system install needed)
