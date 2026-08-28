@@ -30,6 +30,7 @@ members = [
     "learn_09_smart_pointers",
     "learn_10_lifetimes",
     "proj_02_file_parser",
+    "learn_11_concurrency",
 ]
 
 # Shared dependency versions live here so every member can reference them with
