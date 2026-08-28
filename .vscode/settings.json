@@ -1,0 +1,22 @@
+{
+  // rust-analyzer setup for this workspace.
+  //
+  // Why these settings:
+  // - The `capstone/` Tauri app is a SEPARATE Cargo workspace and needs the
+  //   Node + WebView toolchain (and generated icons/dist) to build. Left to
+  //   auto-discovery, rust-analyzer tries to load it and its failing
+  //   tauri-build script, producing the red "rust-analyzer" error.
+  // - So we pin rust-analyzer to the ROOT workspace manifest only.
+
+  // Only analyze the root workspace (ignore the standalone capstone project).
+  "rust-analyzer.linkedProjects": ["./Cargo.toml"],
+
+  // Don't let auto-discovery pull in nested Cargo.toml files (e.g. capstone).
+  "rust-analyzer.files.excludeDirs": ["capstone", "target"],
+
+  // Keep check-on-save scoped to the workspace so a heavy/foreign build script
+  // can't fail the whole analysis. `clippy` gives nicer lints; switch to
+  // "check" if you don't have clippy installed.
+  "rust-analyzer.check.command": "check",
+  "rust-analyzer.check.workspace": true
+}
