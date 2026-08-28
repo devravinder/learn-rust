@@ -25,6 +25,10 @@ members = [
     "learn_50_traits",
     "learn_60_error_handling",
     "proj_10_cli_todo",
+    "learn_70_modules_crates",
+    "learn_80_closures_iterators",
+    "learn_90_smart_pointers",
+    "learn_100_lifetimes",
 ]
 
 # Shared dependency versions live here so every member can reference them with
