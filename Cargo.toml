@@ -33,6 +33,7 @@ members = [
     "learn_11_concurrency",
     "learn_12_async_tokio",
     "learn_13_macros",
+    "learn_14_unsafe_ffi",
 ]
 
 # Shared dependency versions live here so every member can reference them with
