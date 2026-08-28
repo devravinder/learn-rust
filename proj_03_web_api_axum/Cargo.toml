@@ -1,0 +1,16 @@
+[package]
+name = "proj_03_web_api_axum"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "proj_03_web_api_axum"
+path = "src/main.rs"
+
+[dependencies]
+axum = { workspace = true }        # web framework (like Express/Spring)
+tokio = { workspace = true }       # async runtime
+sqlx = { workspace = true }        # async SQL (in-memory SQLite here)
+serde = { workspace = true }       # request/response (de)serialization
+serde_json = { workspace = true }
+anyhow = { workspace = true }
