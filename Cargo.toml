@@ -32,6 +32,7 @@ members = [
     "proj_02_file_parser",
     "learn_11_concurrency",
     "learn_12_async_tokio",
+    "learn_13_macros",
 ]
 
 # Shared dependency versions live here so every member can reference them with
