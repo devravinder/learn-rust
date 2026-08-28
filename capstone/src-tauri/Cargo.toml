@@ -1,0 +1,22 @@
+# NOTE: this app is intentionally NOT part of the root Cargo workspace. Tauri
+# apps have their own build (Node + WebView toolchain) and are generated/run
+# standalone. The empty [workspace] table below detaches it from the root
+# workspace so it builds independently.
+[workspace]
+
+[package]
+name = "capstone-tauri-app"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
