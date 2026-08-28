@@ -23,7 +23,7 @@
 - build documentation for your project with `cargo doc`
 - publish a library to crates.io with `cargo publish`
 
-## To Run
+## To Run without IDE
 
 - compile - this produces executable
   - `rustc main.rs`
