@@ -23,9 +23,12 @@ members = [
     "learn_30_structs_enums",
     "learn_40_collections_generics",
     "learn_50_traits",
+    "learn_60_error_handling",
 ]
 
 # Shared dependency versions live here so every member can reference them with
 # `foo = { workspace = true }` and stay in sync.
 [workspace.dependencies]
 rand = "0.10.2"
+thiserror = "2.0.20"
+anyhow = "1.0.104"
