@@ -1,0 +1,7 @@
+[package]
+name = "learn_12_async_tokio"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { workspace = true } # async runtime (like Node's event loop)
