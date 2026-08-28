@@ -150,4 +150,3 @@ rustup component add rustfmt  # cargo fmt
   ```
 
 - App icons are generated (not committed): `npm run tauri icon path/to/logo.png`.
-
