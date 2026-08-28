@@ -161,34 +161,30 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
 
 [[package]]
-name = "learn_100_lifetimes"
-version = "0.1.0"
-
-[[package]]
-name = "learn_10_core"
+name = "learn_01_core"
 version = "0.1.0"
 dependencies = [
  "rand",
 ]
 
 [[package]]
-name = "learn_20_ownership"
+name = "learn_02_ownership"
 version = "0.1.0"
 
 [[package]]
-name = "learn_30_structs_enums"
+name = "learn_03_structs_enums"
 version = "0.1.0"
 
 [[package]]
-name = "learn_40_collections_generics"
+name = "learn_04_collections_generics"
 version = "0.1.0"
 
 [[package]]
-name = "learn_50_traits"
+name = "learn_05_traits"
 version = "0.1.0"
 
 [[package]]
-name = "learn_60_error_handling"
+name = "learn_06_error_handling"
 version = "0.1.0"
 dependencies = [
  "anyhow",
@@ -196,15 +192,19 @@ dependencies = [
 ]
 
 [[package]]
-name = "learn_70_modules_crates"
+name = "learn_07_modules_crates"
 version = "0.1.0"
 
 [[package]]
-name = "learn_80_closures_iterators"
+name = "learn_08_closures_iterators"
 version = "0.1.0"
 
 [[package]]
-name = "learn_90_smart_pointers"
+name = "learn_09_smart_pointers"
+version = "0.1.0"
+
+[[package]]
+name = "learn_10_lifetimes"
 version = "0.1.0"
 
 [[package]]
@@ -235,7 +235,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "proj_10_cli_todo"
+name = "proj_01_cli_todo"
 version = "0.1.0"
 dependencies = [
  "anyhow",

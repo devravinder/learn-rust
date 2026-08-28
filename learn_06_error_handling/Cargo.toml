@@ -1,0 +1,8 @@
+[package]
+name = "learn_06_error_handling"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+thiserror = { workspace = true } # derive custom error types (libraries)
+anyhow = { workspace = true }    # easy catch-all errors (applications)

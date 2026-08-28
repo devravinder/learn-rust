@@ -8,27 +8,27 @@
 #   Your keybinding runs `cargo run --bin ${fileBasenameNoExtension}`.
 #   In a workspace, `--bin <name>` is only unambiguous when the binary name is
 #   UNIQUE across every member crate. That is why every binary is prefixed with
-#   its folder number, e.g. learn_10_01_hello. Never reuse a binary name and the
+#   its folder number, e.g. learn_01_01_hello. Never reuse a binary name and the
 #   shortcut keeps working unchanged from anywhere in the workspace.
 #
-# Folder numbering uses gaps of 10 (learn_10_, learn_20_, ...) so we can insert a
-# new topic later (e.g. learn_25_) WITHOUT renaming everything.
+# Folder numbering is sequential (learn_01_, learn_02_, ...) in learning order.
+# Binaries are prefixed with their folder number so names stay globally unique.
 
 [workspace]
 resolver = "3" # resolver v3 is the default for edition 2024
 
 members = [
-    "learn_10_core",
-    "learn_20_ownership",
-    "learn_30_structs_enums",
-    "learn_40_collections_generics",
-    "learn_50_traits",
-    "learn_60_error_handling",
-    "proj_10_cli_todo",
-    "learn_70_modules_crates",
-    "learn_80_closures_iterators",
-    "learn_90_smart_pointers",
-    "learn_100_lifetimes",
+    "learn_01_core",
+    "learn_02_ownership",
+    "learn_03_structs_enums",
+    "learn_04_collections_generics",
+    "learn_05_traits",
+    "learn_06_error_handling",
+    "proj_01_cli_todo",
+    "learn_07_modules_crates",
+    "learn_08_closures_iterators",
+    "learn_09_smart_pointers",
+    "learn_10_lifetimes",
 ]
 
 # Shared dependency versions live here so every member can reference them with
