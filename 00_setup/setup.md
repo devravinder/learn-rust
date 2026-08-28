@@ -43,9 +43,23 @@
 
 ## To Run without IDE
 
-- compile - this produces executable
+- manual
   - `rustc main.rs`
-- to run - `.main`
+  - to run - `.main`
+
+- with Cargo
+  - `cargo run`
+
+- with Short Keys: `Ctrl + R, Ctrl + R`
+  - add the below short key (to open short keys:  Ctrl + K, Ctrl + S )
+
+  ```json
+     {
+       "key": "ctrl+r ctrl+r",
+       "command": "workbench.action.terminal.sendSequence",
+       "args": { "text": "cargo run --bin ${fileBasenameNoExtension}\u000D" }
+     }
+  ```
 
 ## Recomondations
 
