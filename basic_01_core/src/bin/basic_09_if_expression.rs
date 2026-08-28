@@ -24,7 +24,7 @@ fn main(){
      .expect("Parse error, invalid number input");   
 
 
-     let mut message =  if guess == secret_number {
+     let message =  if guess == secret_number {
        String::from("Guess is correct")
       //  no ';' at the end....as it is in the middle of express...not end of expression
     }else if guess < secret_number{
