@@ -1,0 +1,14 @@
+[package]
+name = "proj_02_file_parser"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "proj_02_file_parser"
+path = "src/main.rs"
+
+[dependencies]
+csv = { workspace = true }         # CSV reading/writing (serde-aware)
+serde = { workspace = true }       # derive Serialize/Deserialize
+serde_json = { workspace = true }  # JSON output
+anyhow = { workspace = true }      # error handling with context

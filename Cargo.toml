@@ -29,6 +29,7 @@ members = [
     "learn_08_closures_iterators",
     "learn_09_smart_pointers",
     "learn_10_lifetimes",
+    "proj_02_file_parser",
 ]
 
 # Shared dependency versions live here so every member can reference them with
@@ -40,3 +41,4 @@ anyhow = "1.0.104"
 clap = { version = "4.6.6", features = ["derive"] }
 serde = { version = "1.0.229", features = ["derive"] }
 serde_json = "1.0.151"
+csv = "1.4.0"
