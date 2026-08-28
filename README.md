@@ -55,19 +55,19 @@ graph TD
         G --> H[learn_08_closures_iterators]
         H --> I[learn_09_smart_pointers<br/>Box, Rc, RefCell, Arc]
         I --> J[learn_10_lifetimes]
-        J --> P2[proj_20_file_parser<br/>CSV/JSON]
+        J --> P2[proj_02_file_parser<br/>CSV/JSON]
     end
     subgraph Advanced
-        P2 --> K[learn_110_concurrency<br/>threads, Mutex, channels]
-        K --> L[learn_120_async_tokio<br/>async/await, Tokio]
-        L --> M[learn_130_macros]
-        M --> N[learn_140_unsafe_ffi]
-        N --> P3[proj_30_web_api_axum<br/>Axum + Tokio + sqlx]
-        P3 --> P4[proj_40_actix_or_grpc]
+        P2 --> K[learn_11_concurrency<br/>threads, Mutex, channels]
+        K --> L[learn_12_async_tokio<br/>async/await, Tokio]
+        L --> M[learn_13_macros]
+        M --> N[learn_14_unsafe_ffi]
+        N --> P3[proj_03_web_api_axum<br/>Axum + Tokio + sqlx]
+        P3 --> P4[proj_04_grpc<br/>tonic gRPC]
     end
     subgraph Desktop
-        P4 --> T1[tauri_10_notes]
-        T1 --> T2[tauri_20_projects]
+        P4 --> T1[tauri_01_notes]
+        T1 --> T2[tauri_02_projects]
         T2 --> CAP[capstone<br/>React-TS 19 + Tailwind 4 + Vite + Tauri]
     end
 ```
