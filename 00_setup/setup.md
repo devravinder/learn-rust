@@ -50,7 +50,7 @@
 - with Cargo
   - `cargo run`
 
-- with Short Keys: `Ctrl + R, Ctrl + R`
+- with Short Keys in VSC: `Ctrl + R, Ctrl + R`
   - add the below short key (to open short keys:  Ctrl + K, Ctrl + S )
 
   ```json
