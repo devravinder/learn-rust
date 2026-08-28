@@ -22,6 +22,7 @@ members = [
     "learn_20_ownership",
     "learn_30_structs_enums",
     "learn_40_collections_generics",
+    "learn_50_traits",
 ]
 
 # Shared dependency versions live here so every member can reference them with
