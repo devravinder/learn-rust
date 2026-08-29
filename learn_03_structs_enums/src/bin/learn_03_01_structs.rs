@@ -1,7 +1,7 @@
 // learn_03_01_structs — structs hold named fields (like a class's data).
 // Run: cargo run --bin learn_03_01_structs
-// Three forms: named-field, tuple struct, unit struct. #[derive(Debug)] for {:?}.
-#[derive(Debug)]
+// Three forms: named-field, tuple struct, unit struct.
+#[derive(Debug)] // #[derive(Debug)] ...auto generates debug print support = {:?}.
 struct User {
     name: String,
     age: u32,

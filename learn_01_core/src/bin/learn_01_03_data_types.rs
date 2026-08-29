@@ -27,11 +27,13 @@ fn main() {
     let letter: char = 'R'; // 4-byte Unicode scalar, not a byte
     let crab: char = '🦀';
 
+    let name: &str = "Ravinder";
+
     println!("{unsigned8}, {unsigned16}, {unsigned32}, {unsigned64}, {unsigned128}, {unsigned}");
     println!("{signed8}, {signed16}, {signed32}, {signed64}, {signed128}, {signed}");
     println!("{float32}, {float64}");
 
-    println!("{is_present},{is_lazy}");
+    println!("{name}, {is_present},{is_lazy}");
 
     println!("{signed32} {unsigned8} {signed64} {float64} {letter} {crab}");
 
