@@ -55,6 +55,16 @@ fn main() {
     println!("name: {name}, type: {}",type_name_of_val(&name));
 
 
+    println!("---------derefer------------");
+
+    let mut s = String::from("ravinder");
+
+    let s1 = &mut s; // mutable barrow
+
+    *s1 += "?"; // * is dereference
+
+    println!("s1={s1}");
+
     
     println!("Type your name:");
     // read_line appends input (incl. newline); returns Result.
