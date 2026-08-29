@@ -3,6 +3,7 @@
 // String = owned, growable (heap)
 // &str = borrowed, read-only view. It is slice
 use std::io;
+use std::any::type_name_of_val;
 
 fn main() {
     let name = String::from("ravinder"); // &str -> String
@@ -39,6 +40,20 @@ fn main() {
 
     user_name = "raaju"; // new literal created & reference is borrowed
     println!("user_name after: {user_name}");
+
+
+    println!("---------Conversion---------");
+
+    let name: String = String::from("Ravinder");
+    let name : &str = name.as_str();
+
+    println!("name: {name}, type: {}",type_name_of_val(&name));
+
+
+    let name: String = name.to_string();
+
+    println!("name: {name}, type: {}",type_name_of_val(&name));
+
 
     
     println!("Type your name:");
