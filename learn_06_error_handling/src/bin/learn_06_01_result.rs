@@ -6,7 +6,8 @@ use std::num::ParseIntError;
 
 // Returns Result; `?` propagates parse errors up to the caller.
 fn double_str(s: &str) -> Result<i32, ParseIntError> {
-    let n: i32 = s.parse()?; // early-return Err on failure
+    let n: i32 = s.parse()?; // early-return Err on failure // auto un-wrapping
+    // ? this can be used only in function that returns a Result or Option
     Ok(n * 2)
 }
 

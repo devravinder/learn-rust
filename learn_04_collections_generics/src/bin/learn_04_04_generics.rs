@@ -3,7 +3,8 @@
 // Like Java/TS generics <T>. Bounds (T: Trait) constrain what T must support.
 use std::fmt::Display;
 
-// Generic function with a trait bound: T must be comparable.
+// Generic function with a trait bound: T must be comparable(PartialOrd).
+// Copy = This type can be copied simply instead of being moved. ( i.e primitive type )
 fn largest<T: PartialOrd + Copy>(list: &[T]) -> T {
     let mut max = list[0];
     for &item in list {
