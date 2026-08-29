@@ -10,6 +10,7 @@ async fn main() {
     // Producer task.
     tokio::spawn(async move {
         for i in 1..=5 {
+            println!("in spawn {i}");
             tx.send(i * 10).await.unwrap(); // await if the buffer is full
         }
         // tx dropped here -> receiver loop ends

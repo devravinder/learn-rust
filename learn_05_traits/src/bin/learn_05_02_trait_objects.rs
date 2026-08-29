@@ -24,6 +24,8 @@ fn render_static(item: &impl Draw) {
 }
 
 // Dynamic dispatch: a heterogeneous list of different types behind &dyn.
+// Box is pointer that stores a value on the heap  ( instead of directly on the stack )
+// Box is pointer on heap
 fn render_all(items: &[Box<dyn Draw>]) {
     for item in items {
         println!("dyn: {}", item.draw());

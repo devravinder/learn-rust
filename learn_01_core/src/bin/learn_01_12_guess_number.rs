@@ -13,7 +13,8 @@ fn main() {
         let mut guess = String::new(); // fresh buffer each turn
         io::stdin().read_line(&mut guess).expect("read failed");
 
-        // parse -> Result; retry instead of crashing on bad input
+        // guess.trim().parse() return Result enum ( it has Ok, Err values )
+        //  that Result enum we are passing to match
         let guess: u32 = match guess.trim().parse() {
             Ok(n) => n,
             Err(e) => {

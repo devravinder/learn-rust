@@ -11,14 +11,14 @@ fn main() {
         None => println!("nothing"),
     }
 
-    // if let: concise when you only care about one variant.
+    // if let: concise when you only care about one variant. // ***
     if let Some(n) = some_num {
         println!("if let: {n}");
     }
 
     // Common combinators (like optional chaining / defaults):
     println!("unwrap_or: {}", nothing.unwrap_or(0));
-    println!("map: {:?}", some_num.map(|n| n * 10));
+    println!("map: {:?}", some_num.map(|n| n * 10)); // |n| is closure syntax // lamda / arrow function
 
     // A function returning Option.
     println!("{:?}", first_even(&[1, 3, 4, 7]));

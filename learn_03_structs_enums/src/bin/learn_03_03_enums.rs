@@ -5,7 +5,7 @@
 enum Shape {
     Circle(f64),         // radius
     Rectangle(f64, f64), // width, height
-    Triangle { base: f64, height: f64 }, // struct-like variant
+    Triangle { base: f64, height: f64 }, // struct-like variant // ***
 }
 
 impl Shape {
@@ -25,6 +25,6 @@ fn main() {
         Shape::Triangle { base: 6.0, height: 2.0 },
     ];
     for s in &shapes {
-        println!("{s:?} area = {:.2}", s.area());
+        println!("{s:?} area = {:.2}", s.area()); // {:.2} // two decimals
     }
 }

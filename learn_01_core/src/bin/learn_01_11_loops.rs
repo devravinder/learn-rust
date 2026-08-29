@@ -4,7 +4,7 @@
 fn main() {
     // loop returning a value
     let mut counter = 0;
-    let result = loop {
+    let result = loop { // infinite loop ( until break )
         counter += 1;
         if counter == 10 {
             break counter * 2;

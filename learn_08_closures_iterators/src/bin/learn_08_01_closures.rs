@@ -12,7 +12,7 @@ fn main() {
 
     // Capture by move (takes ownership) — needed when returning/spawning.
     let name = String::from("Rust");
-    let greet = move || format!("Hello, {name}!");
+    let greet = move || format!("Hello, {name}!"); // returing arrow function
     println!("{}", greet());
 
     // Passing a closure to a function (FnMut for mutation).
@@ -29,5 +29,5 @@ fn main() {
 
 // Return an `impl Fn` closure.
 fn make_multiplier(n: i32) -> impl Fn(i32) -> i32 {
-    move |x| x * n
+    move |x| x * n // returing arrow function
 }

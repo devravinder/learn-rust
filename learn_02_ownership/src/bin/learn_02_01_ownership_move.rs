@@ -3,12 +3,12 @@
 // Rules: each value has ONE owner; when the owner goes out of scope, value is dropped.
 // Assigning/passing a heap value MOVES ownership (unlike JS reference copy or Java).
 fn main() {
-    // Copy types (on stack): i32, bool, char... are copied, not moved.
+    // Copy types (on stack): i32, bool, char... are copied, not moved. // primitives get copied
     let a = 5;
     let b = a; // copy
     println!("copy: a={a} b={b}"); // both valid
 
-    // Heap type (String): assignment MOVES ownership.
+    // Heap type (String): assignment MOVES ownership.  // objects get moved
     let s1 = String::from("hello");
     let s2 = s1; // s1 is moved into s2; s1 is now invalid
     // println!("{s1}"); // <- compile error: value borrowed after move

@@ -26,7 +26,19 @@ fn main() {
         name: String::from("Kiro"),
         ..u // take age/active from u (moves non-Copy fields)
     };
-    println!("{u2:?}");
+
+        // this works
+        println!("u:  {u:?}");
+        println!("u2: {u2:?}");
+        
+        u.age += 1; 
+        println!("u1: {u:?}");
+        println!("u2: {u2:?}"); // u2 is not effected
+
+        /*
+        println!("u2: {u2:?}");
+        println!("u1:{u1:?}"); // error ...after above line u1 is cleared
+         */
 
     let p = Point(3, 4);
     println!("point x={} y={}", p.0, p.1);

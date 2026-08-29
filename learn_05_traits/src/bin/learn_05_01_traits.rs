@@ -36,7 +36,7 @@ impl Summary for Tweet {
 }
 
 fn main() {
-    let a = Article { headline: "Rust 2024".into() };
+    let a = Article { headline: "Rust 2024".into() }; // .info to convert to String ( != str)
     let t = Tweet { user: "ferris".into(), text: "traits rock".into() };
     println!("{}", a.summarize());
     println!("{}", t.summarize());

@@ -6,6 +6,7 @@ fn main() {
     println!("add(3,4) = {}", add(3, 4));
     println!("classify(-5) = {}", classify(-5));
 
+    // it is like lambd / arrow function = inline expression
     let doubled = {
         let base = 21;
         base * 2 // block value (no `;`)
@@ -22,7 +23,7 @@ fn add(a: i32, b: i32) -> i32 {
     a + b // no `;` = return value
 }
 
-fn classify(n: i32) -> &'static str {
+fn classify(n: i32) -> &'static str { // 'static = entire program life time ( like static ) // & -> is for reference
     if n < 0 {
         return "negative"; // early return
     }

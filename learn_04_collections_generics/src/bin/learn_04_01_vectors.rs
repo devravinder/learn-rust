@@ -19,8 +19,8 @@ fn main() {
         print!("{n} ");
     }
     println!();
-    for n in &mut v {
-        *n += 1; // deref to modify
+    for n in &mut v { // &  → borrow / get a reference
+        *n += 1; // deref to modify // *  → dereference / access the value behind a reference
     }
     println!("after +1: {v:?}");
 

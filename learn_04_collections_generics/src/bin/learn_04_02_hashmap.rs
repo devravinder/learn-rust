@@ -11,13 +11,17 @@ fn main() {
     println!("alice = {:?}", scores.get("alice")); // Option<&i32>
     println!("missing = {:?}", scores.get("carol"));
 
-    // entry(): insert-if-absent, then modify — great for counting.
+    // entry(): insert-if-absent, then modify — great for counting. // ***
     *scores.entry("alice".to_string()).or_insert(0) += 5;
     *scores.entry("carol".to_string()).or_insert(0) += 1;
+
 
     for (name, score) in &scores {
         println!("{name}: {score}");
     }
+
+    let entry = scores.entry("alice".to_string());
+    println!("scores.entry: {:?}", entry); // retruns entry
 
     // Word frequency count.
     let text = "the cat the dog the bird";
