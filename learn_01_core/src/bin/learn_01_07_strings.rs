@@ -1,6 +1,7 @@
 // learn_01_07_strings — String vs &str + stdin.
 // Run: cargo run --bin learn_01_07_strings
-// String = owned, growable (heap). &str = borrowed, read-only view.
+// String = owned, growable (heap)
+// &str = borrowed, read-only view. It is slice
 use std::io;
 
 fn main() {
@@ -13,6 +14,32 @@ fn main() {
     let s2 = String::from("world!");
     let s3 = s1 + &s2; // note s1 has been moved here and can no longer be used
     println!("s3:{s3}");
+
+
+    let mut name = String::from("Ravinder");
+
+    name.push_str(" Reddy"); // we can modify String
+
+    println!("{name}");
+
+
+    let name = String::from("Ravinder");
+
+    let user_name: &str = &name; // doesn't own...just borrows
+
+    // user_name.push_str(" Reddy"); // ❌ gives error
+    println!("user_name: {user_name}");
+
+
+    let user_name = "Raamu"; // literals are &str ... borrows the reference // we can't modify
+    println!("user_name: {user_name}");
+
+    let mut user_name = "Raamu"; 
+    println!("user_name before: {user_name}");
+
+    user_name = "raaju"; // new literal created & reference is borrowed
+    println!("user_name after: {user_name}");
+
     
     println!("Type your name:");
     // read_line appends input (incl. newline); returns Result.
