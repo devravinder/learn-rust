@@ -57,6 +57,15 @@ fn main() {
         None => println!("No number"),
     }
 
+    println!("------------with result enum --------");
+
+    let result: Result<i32, &str> = Ok(100);
+
+    match result {
+        Ok(value) => println!("Success: {value}"),
+        Err(error) => println!("Error: {error}"),
+    }
+
     println!("---------Multi statement--------");
 
     let number = 10;
