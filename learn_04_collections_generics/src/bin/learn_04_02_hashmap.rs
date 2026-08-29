@@ -11,6 +11,16 @@ fn main() {
     println!("alice = {:?}", scores.get("alice")); // Option<&i32>
     println!("missing = {:?}", scores.get("carol"));
 
+     scores.entry("ravinder".to_string()).or_insert(10); // returns mutable reference
+     println!("scores:{scores:?}");
+     
+     let upsert: &mut i32 = scores.entry("reddy".to_string()).or_insert(10); 
+     *upsert +=20;
+
+    println!("scores:{scores:?}");
+    println!("reddy = {:?}", scores.get("reddy"));
+
+
     // entry(): insert-if-absent, then modify — great for counting. // ***
     *scores.entry("alice".to_string()).or_insert(0) += 5;
     *scores.entry("carol".to_string()).or_insert(0) += 1;

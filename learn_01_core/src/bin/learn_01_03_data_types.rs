@@ -21,6 +21,11 @@ fn main() {
     let float32: f32 = 3.14159;
     let float64: f64 = 3.14159;
 
+
+    let i = 12u8;
+
+    println!("i: {i}");
+
     let is_present: bool = true; 
     let is_lazy: bool = false;
 

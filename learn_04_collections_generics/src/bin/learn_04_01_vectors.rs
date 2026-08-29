@@ -8,7 +8,10 @@ fn main() {
     v.push(30);
 
     let v2 = vec![1, 2, 3]; // vec! macro literal
-    println!("{v:?} {v2:?}");
+    let v3 = vec![1u8,1,2,3]; // 1u8 is u8  type 1 .. so entire vector is u8 type
+    let v4 = vec![1u8;5]; // [1,1,1,1,1] = 1 is 5 times
+
+    println!("{v:?}, {v2:?}, {v3:?}, {v4:?}, {}", v4.len());
 
     // Indexing panics if out of range; get() returns Option (safe).
     println!("v[0] = {}", v[0]);
