@@ -29,6 +29,7 @@ impl Summary for Tweet {
     fn title(&self) -> String {
         format!("@{}", self.user)
     }
+    // // compile time polymorphism
     fn summarize(&self) -> String {
         // override
         format!("@{}: {}", self.user, self.text)
