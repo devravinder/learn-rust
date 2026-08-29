@@ -3,6 +3,10 @@
 // Modules namespace your code (like TS namespaces / Java packages).
 // Items are PRIVATE by default; `pub` exposes them.
 
+// create = a unit that Rust compiles... so this can be used in another project/package
+         // compiled rust project/module... should have Corgo.toml
+         // like npm packages
+
 mod restaurant {
     pub mod front {
         // pub fn is callable from outside the module.
