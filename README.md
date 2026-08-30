@@ -86,7 +86,7 @@ graph TD
 | `Result<T, E>` | `try/catch` made explicit in the type |
 | `Vec<T>` | `ArrayList` / JS array |
 | `HashMap<K,V>` | `HashMap` / JS `Map` / object |
-| closures `|x| x + 1` | arrow functions |
+| closures ` | x | x + 1` | arrow functions |
 | iterators `.map().filter()` | array methods in JS/TS |
 | `async`/`await` + Tokio | `async`/`await` + Node event loop |
 | Cargo | npm/Maven + build tool combined |
@@ -110,3 +110,7 @@ graph TD
 ## Prerequisites
 
 See [`learn_00_setup/setup.md`](learn_00_setup/setup.md).
+
+## Reference
+
+- [Smart Contract Programmer](https://www.youtube.com/watch?v=wq56EAYZqGg&list=PLO5VPQH6OWdXR8NlZt0jRbC39W_IyzS-v&index=1)
