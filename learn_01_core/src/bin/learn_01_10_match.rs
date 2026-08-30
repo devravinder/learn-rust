@@ -9,7 +9,7 @@ use std::io;
 use rand::prelude::*;
 
 fn main() {
-    println!("--------exact match or default---------");
+    println!("--------number | exact match or default---------");
     let number = 3;
 
     match number {
@@ -19,8 +19,28 @@ fn main() {
         _ => println!("Something else"), // like default
     }
 
+    println!("------------string(&str)------");
+    let command = "start";
 
-    println!("------union----------");
+    match command { // supports only &str
+        "start" => println!("Starting..."),
+        "stop" => println!("Stopping..."),
+        "pause" => println!("Paused"),
+        _ => println!("Unknown command"),
+    }
+
+
+    println!("------------String------");
+    let command = String::from("stop");
+
+    match command.as_str() { // convert to &str
+        "start" => println!("Starting..."),
+        "stop" => println!("Stopping..."),
+        "pause" => println!("Paused"),
+        _ => println!("Unknown command"),
+    }
+
+    println!("------number | union----------");
 
     let number = 2;
 
