@@ -16,6 +16,12 @@ fn largest<T: PartialOrd + Copy>(list: &[T]) -> T {
 }
 
 // Generic struct.
+
+// mono morphism = while compile time...rust generates code for each type that used in code
+/*
+struct Pair_i32 {...}
+struct Pair_&str { ... }
+*/
 struct Pair<T> {
     first: T,
     second: T,
