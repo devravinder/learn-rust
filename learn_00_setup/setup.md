@@ -150,3 +150,9 @@ rustup component add rustfmt  # cargo fmt
   ```
 
 - App icons are generated (not committed): `npm run tauri icon path/to/logo.png`.
+
+## Tricks
+
+- to remove unused variable warning
+  - for entire file(1st line): #![allow(unused)]
+  - for one variable(above variable): #[allow(unused)]

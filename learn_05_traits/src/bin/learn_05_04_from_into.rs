@@ -1,6 +1,6 @@
 // to convert one type(struct) to another
 // do value-to-value conversions
-// in Rust ( in docs ) Sized means ...known datatype ( known length )
+// in Rust ( in docs ) Sized means ...Types with a constant size known at compile time.
 
 /*
 // https://doc.rust-lang.org/std/convert/trait.From.html
