@@ -2,8 +2,20 @@
 // learn_05_02_trait_objects — static dispatch (generics) vs dynamic (dyn).
 // Run: cargo run --bin learn_05_02_trait_objects
 // impl Trait / <T: Trait> = compile-time (fast). dyn Trait = runtime (flexible).
+// Trait Object: value/obj whose concrete type is only known at runtime
 
 // Dispatch = overloading/polymorphism
+/*
+ Static Disptach:-
+   - fun to call is known at compile time
+   - mono-morphism ( code size cab be lrager )
+   - no run time cost ( no vtable lookup )
+
+Dynamic Disptach:-
+   - fun to call is known at run time
+   - vtable lookup ( code is smaller )
+   - runtime overhead ( vtable lookup )
+*/
 
 trait Draw {
     fn draw(&self) -> String;
@@ -11,6 +23,7 @@ trait Draw {
 
 struct Button;
 struct Checkbox;
+
 impl Draw for Button {
     fn draw(&self) -> String {
         "[Button]".into()
@@ -27,6 +40,10 @@ fn render_static(item: &impl Draw) {
     println!("static: {}", item.draw());
 }
 
+fn static_dispatch<T: Draw>(item: &T) {
+    println!("static_dispatch: {}", item.draw());
+}
+
 // Dynamic dispatch: a heterogeneous list of different types behind &dyn.
 // Box is pointer that stores a value on the heap  ( instead of directly on the stack )
 // Box is pointer on heap
@@ -37,9 +54,29 @@ fn render_all(items: &[Box<dyn Draw>]) {
     }
 }
 
+fn dynamic_diaptch(t: &dyn Draw){
+  println!("dynamic_diaptch");
+  t.draw();
+}
+
+/*
+ &dyn vs Box
+
+ &dyn:-
+   - value is only borrowed... ownership still stays in main method
+
+ Box:-
+   - ownership of the value is passed to the function
+
+*/
+
 fn main() {
     render_static(&Button);
     render_static(&Checkbox);
+
+    //--
+    static_dispatch(&Button);
+    static_dispatch(&Checkbox);
 
     let widgets: Vec<Box<dyn Draw>> = vec![Box::new(Button), Box::new(Checkbox)];
     render_all(&widgets);
@@ -49,13 +86,17 @@ fn main() {
     let input = "button";
 
     // run time polymorphism 
-    // we are returing &(reference) -> bcz rust should know size at compile time
+    // trait object = concrete type known at runtime 
+    // we are returing &(reference) -> for dynamic type...we should use referenec
     let draw : &dyn Draw = match input {
          "button" => &Button,
         _ => &Checkbox
     };
 
     println!("selected: {}",draw.draw());
+
+
+    dynamic_diaptch(draw);
 
     println!("--------Box<dyn Draw>-----------");
     let input = "checkbox";
