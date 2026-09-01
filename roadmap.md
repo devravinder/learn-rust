@@ -30,3 +30,5 @@
   - sized vs ?sized
 - generics
 - collections
+- iterators
+  - generic type vs associated type
