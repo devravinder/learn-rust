@@ -4,6 +4,10 @@
 // runtime behavior — they let the borrow checker prove no dangling references.
 // 'a is a generic lifetime parameter (like <T>, but for reference validity).
 
+/*
+ lifetimes tells rust compiler ...how long a value is valid
+*/
+
 // The returned &str lives as long as the SHORTER of the two inputs ('a).
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     if x.len() > y.len() { x } else { y }
