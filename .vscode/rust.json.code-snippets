@@ -1,0 +1,9 @@
+{
+	
+ "println shortcut": {
+	"scope": "rust",
+    "prefix": "pln",
+    "body": ["println!(\"$1\");$0"],
+    "description": "println! macro"
+  }
+}

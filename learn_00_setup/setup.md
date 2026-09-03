@@ -11,6 +11,33 @@
   - `CodeLLDB`
   - `Even Better TOML`
 
+### Custom Snippets
+
+- `Ctrl + Shift + P` > Configure Snippets > Give name... and the below snippet in the generated file
+
+   ```json
+      "println shortcut": {
+        "scope": "rust",
+            "prefix": "pln",
+            "body": ["println!(\"$1\");$0"],
+            "description": "println! macro"
+          }
+   ```
+
+  - or create file in .vscode folder with name `rust.code-snippets.json` and add
+
+    ```json
+       {
+          
+        "println shortcut": {
+          "scope": "rust",
+            "prefix": "pln",
+            "body": ["println!(\"$1\");$0"],
+            "description": "println! macro"
+          }
+        }
+    ```
+
 ## Cargo Usage
 
 - new project: `cargo new basics`
