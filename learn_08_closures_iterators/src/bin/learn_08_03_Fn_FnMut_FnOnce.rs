@@ -72,7 +72,7 @@ fn main(){
     let greet = move || println!("fn once {}", v);
 
     f_fn_once(greet);
-    f_fn_once(greet); // ownership is copied...we can multiple times
+    f_fn_once(greet); // ownership is copied...we can call multiple times
 
 
 
