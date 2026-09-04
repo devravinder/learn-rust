@@ -23,6 +23,7 @@
   - barrow
   - stack vs heap
 - error handling
+- lifetime
 - traits
   - into, from
   - dispatch: static, dynamic
@@ -32,3 +33,6 @@
 - collections
 - iterators
   - generic type vs associated type
+- closures
+- smart pointers
+  - Box
