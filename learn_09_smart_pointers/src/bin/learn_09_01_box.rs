@@ -58,6 +58,15 @@ struct Tree {
 
 fn main() {
 
+    let path = "C:/work_spaces/rust/learn-rust/learn_09_smart_pointers/src/bin/number.txt";
+
+    let s = read_file(path);
+
+    println!("s:{:?}",s.unwrap());
+
+
+
+
     let i:i32 = 1;
 
     let b = Box::new(i); // now value 1 stored on heap
