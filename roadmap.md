@@ -36,4 +36,6 @@
 - closures
 - smart pointers
   - Box
-  - RC ( Reference Count ) & Reference Cell
+  - RC ( Reference Count )
+  - Reference Cell
+  - ARC ( Atomic Reference Count )
