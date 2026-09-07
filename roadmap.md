@@ -39,8 +39,10 @@
   - RC ( Reference Count )
   - Reference Cell
   - Weak Reference
-  - ARC ( Atomic Reference Count )
+  - ARC ( Atomic Reference Count ) - multi thread env
+  - Mutex - multi thread env
 
 - threads
   - scoped threds
   - channel
+  - Mutex
