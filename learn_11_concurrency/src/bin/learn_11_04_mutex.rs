@@ -41,6 +41,8 @@ fn main(){
 
 
       println!("mutex : {:?}", m);
+      println!("mutex : {:?}", m.lock().unwrap());
+
 
 
 
