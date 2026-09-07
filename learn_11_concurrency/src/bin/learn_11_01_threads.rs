@@ -46,4 +46,31 @@ fn main() {
         Err(err)=>println!("Error {:?}",err)
     }
 
+    //==================
+    println!("==========Scoped Thread============");
+
+    let msg = "hello".to_string();
+
+    let (v1, v2) = thread::scope(| scope |{ // without move ...borrow the scope/ownership
+       let h1 = scope.spawn(|| {
+            println!("msg1 :{msg}");
+            return  1u32;
+        });
+
+       let h2 = scope.spawn(|| {
+            println!("msg2 :{msg}");
+            return  2u32;
+
+        });
+
+        (h1.join().unwrap(), h2.join().unwrap())
+        
+    });
+    // auto join() 
+
+
+    println!("msg outside: {msg}");
+    println!("v1:{v1}, v2:{v2}");
+
+
 }

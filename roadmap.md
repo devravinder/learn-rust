@@ -42,3 +42,5 @@
   - ARC ( Atomic Reference Count )
 
 - threads
+  - scoped threds
+  - channel
