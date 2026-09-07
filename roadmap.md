@@ -38,4 +38,7 @@
   - Box
   - RC ( Reference Count )
   - Reference Cell
+  - Weak Reference
   - ARC ( Atomic Reference Count )
+
+- threads
