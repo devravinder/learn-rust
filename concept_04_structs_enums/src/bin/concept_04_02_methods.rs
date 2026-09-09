@@ -1,5 +1,5 @@
-// learn_03_02_methods — impl blocks add methods & associated functions.
-// Run: cargo run --bin learn_03_02_methods
+// concept_04_02_methods — impl blocks add methods & associated functions.
+// Run: cargo run --bin concept_04_02_methods
 // &self = borrow, &mut self = mutating borrow, self = consumes. No `self` = static.
 #[derive(Debug)]
 struct Rectangle {

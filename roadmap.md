@@ -40,7 +40,7 @@ Cargo package with runnable examples under `src/bin/`.
 - file modules
 - crates & the workspace layout
 
-### 04 — Structs & Enums  ·  _folder: (pending)_
+### 04 — Structs & Enums  ·  [`concept_04_structs_enums`](concept_04_structs_enums/)
 - struct & methods
 - enum (with data)
   - built-in enums

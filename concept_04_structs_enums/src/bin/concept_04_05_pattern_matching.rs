@@ -1,5 +1,5 @@
-// learn_03_05_pattern_matching — match patterns in depth.
-// Run: cargo run --bin learn_03_05_pattern_matching
+// concept_04_05_pattern_matching — match patterns in depth.
+// Run: cargo run --bin concept_04_05_pattern_matching
 // Ranges, bindings, guards, tuples, `_` wildcard, `|` or-patterns.
 fn main() {
     // Ranges and wildcard.

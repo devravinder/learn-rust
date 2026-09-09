@@ -1,4 +1,4 @@
-# learn_03_structs_enums — Structs, Enums, Option, Pattern Matching
+# concept_04_structs_enums — Structs, Enums, Option, Pattern Matching
 
 Modeling data. Structs group related fields; enums express "one of several
 shapes". Together with `match` they replace class hierarchies and `null`.
@@ -7,11 +7,11 @@ shapes". Together with `match` they replace class hierarchies and `null`.
 
 | # | Binary | Concept | Analogy |
 | --- | --- | --- | --- |
-| 01 | `learn_03_01_structs` | named/tuple structs, update syntax | class fields / records |
-| 02 | `learn_03_02_methods` | `impl`, methods, associated fns | methods + static factories |
-| 03 | `learn_03_03_enums` | enums with data + `match` | TS discriminated unions |
-| 04 | `learn_03_04_option` | `Option<T>` instead of null | nullable, but enforced |
-| 05 | `learn_03_05_pattern_matching` | ranges, guards, destructuring | powered-up `switch` |
+| 01 | `concept_04_01_structs` | named/tuple structs, update syntax | class fields / records |
+| 02 | `concept_04_02_methods` | `impl`, methods, associated fns | methods + static factories |
+| 03 | `concept_04_03_enums` | enums with data + `match` | TS discriminated unions |
+| 04 | `concept_04_04_option` | `Option<T>` instead of null | nullable, but enforced |
+| 05 | `concept_04_05_pattern_matching` | ranges, guards, destructuring | powered-up `switch` |
 
 ## Struct + impl vs a class
 

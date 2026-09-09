@@ -44,7 +44,7 @@ VS Code shortcut (unchanged — works because binary names are unique):
 graph TD
     subgraph Basics
         A[concept_01_core<br/>vars, types, functions, control flow] --> B[concept_02_ownership<br/>ownership, borrow, slices]
-        B --> C[learn_03_structs_enums<br/>structs, enums, Option, match]
+        B --> C[concept_04_structs_enums<br/>structs, enums, Option, match]
     end
     subgraph Intermediate
         C --> D[learn_04_collections_generics<br/>Vec, HashMap, generics]

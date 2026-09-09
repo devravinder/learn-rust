@@ -1,5 +1,5 @@
-// learn_03_04_option — Option<T> replaces null.
-// Run: cargo run --bin learn_03_04_option
+// concept_04_04_option — Option<T> replaces null.
+// Run: cargo run --bin concept_04_04_option
 // enum Option<T> { Some(T), None }. The compiler forces you to handle None.
 fn main() {
     let some_num: Option<i32> = Some(5);
