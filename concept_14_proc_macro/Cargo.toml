@@ -1,17 +1,17 @@
-# learn_13_proc_macro — a PROCEDURAL macro crate.
+# concept_14_proc_macro — a PROCEDURAL macro crate.
 #
 # A proc-macro crate is special: it compiles into a compiler plugin, not a
 # normal library or binary. That is what `proc-macro = true` below declares.
 # Because of this, proc-macros CANNOT live in a src/bin/ file next to the other
 # lessons — they must be their own crate. Other crates then depend on this one
-# and use the macro (see learn_13_08_proc_macro_use in learn_13_macros).
+# and use the macro (see concept_14_08_proc_macro_use in concept_14_macros).
 #
 # The two standard helper crates:
 #   syn   -> PARSE the input Rust tokens into a syntax tree we can inspect
 #   quote -> BUILD new Rust tokens (the generated code) with a template syntax
 
 [package]
-name = "learn_13_proc_macro"
+name = "concept_14_proc_macro"
 version = "0.1.0"
 edition = "2024"
 

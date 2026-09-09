@@ -1,5 +1,5 @@
-// learn_13_02_designators — capturing syntax with $name:designator.
-// Run: cargo run --bin learn_13_02_designators
+// concept_14_02_designators — capturing syntax with $name:designator.
+// Run: cargo run --bin concept_14_02_designators
 
 /*
 

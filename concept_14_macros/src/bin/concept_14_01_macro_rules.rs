@@ -1,5 +1,5 @@
-// learn_13_01_macro_rules — the basics of macro_rules!.
-// Run: cargo run --bin learn_13_01_macro_rules
+// concept_14_01_macro_rules — the basics of macro_rules!.
+// Run: cargo run --bin concept_14_01_macro_rules
 
 /*
  ref: https://doc.rust-lang.org/stable/rust-by-example/macros.html

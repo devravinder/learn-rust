@@ -1,5 +1,5 @@
-// learn_13_05_dsl — a tiny Domain Specific Language via macros.
-// Run: cargo run --bin learn_13_05_dsl
+// concept_14_05_dsl — a tiny Domain Specific Language via macros.
+// Run: cargo run --bin concept_14_05_dsl
 
 /*
   DSL ( Domain-specific languages ):-

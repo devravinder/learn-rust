@@ -108,7 +108,7 @@ Cargo package with runnable examples under `src/bin/`.
 - async channels
 - native vs async
 
-### 14 — Macros  ·  _folder: (pending)_
+### 14 — Macros  ·  [`concept_14_macros`](concept_14_macros/) · [`concept_14_proc_macro`](concept_14_proc_macro/)
 - declarative (`macro_rules!`)
 - procedural (derive, attribute, function-like)
 

@@ -1,5 +1,5 @@
-// learn_13_04_variadic — variadic macros with repetition $( ... )*.
-// Run: cargo run --bin learn_13_04_variadic
+// concept_14_04_variadic — variadic macros with repetition $( ... )*.
+// Run: cargo run --bin concept_14_04_variadic
 
 /*
 

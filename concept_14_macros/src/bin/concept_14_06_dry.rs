@@ -1,6 +1,6 @@
-// learn_13_06_dry — DRY: generate whole functions (and tests) with macros.
-// Run:   cargo run  --bin learn_13_06_dry     (shows it in action)
-// Test:  cargo test --bin learn_13_06_dry     (runs the generated #[test]s)
+// concept_14_06_dry — DRY: generate whole functions (and tests) with macros.
+// Run:   cargo run  --bin concept_14_06_dry     (shows it in action)
+// Test:  cargo test --bin concept_14_06_dry     (runs the generated #[test]s)
 
 
 /*

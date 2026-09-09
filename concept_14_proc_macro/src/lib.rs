@@ -1,4 +1,4 @@
-// learn_13_proc_macro — custom proc-macros: derive, attribute, function-like.
+// concept_14_proc_macro — custom proc-macros: derive, attribute, function-like.
 
 /*
 

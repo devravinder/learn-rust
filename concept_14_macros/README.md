@@ -1,4 +1,4 @@
-# learn_13_macros — Macros
+# concept_14_macros — Macros
 
 Macros generate code at compile time, before type checking. They enable things
 functions can't: variadic arguments, custom syntax, and auto-implemented traits.
@@ -12,28 +12,28 @@ chapter, then finishes with procedural macros.
 
 | # | Binary | Concept | RBE section |
 | --- | --- | --- | --- |
-| 01 | `learn_13_01_macro_rules` | basics of `macro_rules!` (match on syntax) | Syntax |
-| 02 | `learn_13_02_designators` | capture syntax with `$name:designator` | Designators |
-| 03 | `learn_13_03_overload` | multiple rules / custom syntax | Overload |
-| 04 | `learn_13_04_variadic` | variadic macros with `$( ... )*` | Repeat |
-| 05 | `learn_13_05_dsl` | a tiny DSL (`calculate! { eval ... }`) | DSL |
-| 06 | `learn_13_06_dry` | generate whole `fn`s + tests; `tt` designator | DRY |
-| 07 | `learn_13_07_derive_and_builtin` | derive (procedural) macros + built-ins | — |
-| 08 | `learn_13_08_proc_macro_use` | USE custom proc-macros: derive + attribute + function-like | — |
+| 01 | `concept_14_01_macro_rules` | basics of `macro_rules!` (match on syntax) | Syntax |
+| 02 | `concept_14_02_designators` | capture syntax with `$name:designator` | Designators |
+| 03 | `concept_14_03_overload` | multiple rules / custom syntax | Overload |
+| 04 | `concept_14_04_variadic` | variadic macros with `$( ... )*` | Repeat |
+| 05 | `concept_14_05_dsl` | a tiny DSL (`calculate! { eval ... }`) | DSL |
+| 06 | `concept_14_06_dry` | generate whole `fn`s + tests; `tt` designator | DRY |
+| 07 | `concept_14_07_derive_and_builtin` | derive (procedural) macros + built-ins | — |
+| 08 | `concept_14_08_proc_macro_use` | USE custom proc-macros: derive + attribute + function-like | — |
 
 ```bash
-cargo run --bin learn_13_01_macro_rules
-cargo run --bin learn_13_02_designators
-cargo run --bin learn_13_03_overload
-cargo run --bin learn_13_04_variadic
-cargo run --bin learn_13_05_dsl
-cargo run  --bin learn_13_06_dry   # and: cargo test --bin learn_13_06_dry
-cargo run --bin learn_13_07_derive_and_builtin
-cargo run --bin learn_13_08_proc_macro_use
+cargo run --bin concept_14_01_macro_rules
+cargo run --bin concept_14_02_designators
+cargo run --bin concept_14_03_overload
+cargo run --bin concept_14_04_variadic
+cargo run --bin concept_14_05_dsl
+cargo run  --bin concept_14_06_dry   # and: cargo test --bin concept_14_06_dry
+cargo run --bin concept_14_07_derive_and_builtin
+cargo run --bin concept_14_08_proc_macro_use
 ```
 
 > The custom derive macro itself lives in a **separate crate**,
-> [`learn_13_proc_macro`](../learn_13_proc_macro/src/lib.rs), because proc-macro
+> [`concept_14_proc_macro`](../concept_14_proc_macro/src/lib.rs), because proc-macro
 > crates compile into a compiler plugin and cannot live in `src/bin/`. Lesson 08
 > is the *consumer*; that crate is the *implementation*.
 

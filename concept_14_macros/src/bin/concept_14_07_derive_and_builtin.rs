@@ -1,5 +1,5 @@
-// learn_13_07_derive_and_builtin — derive (procedural) macros + built-ins.
-// Run: cargo run --bin learn_13_07_derive_and_builtin
+// concept_14_07_derive_and_builtin — derive (procedural) macros + built-ins.
+// Run: cargo run --bin concept_14_07_derive_and_builtin
 // So far we've used DECLARATIVE macros (macro_rules!, what Rust by Example
 // covers). The OTHER family is PROCEDURAL macros: actual Rust code that runs at
 // compile time and transforms a token stream. #[derive(...)] is one kind.

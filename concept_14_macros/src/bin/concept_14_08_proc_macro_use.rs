@@ -1,16 +1,16 @@
-// learn_13_08_proc_macro_use — USING our own proc-macros (all 3 kinds).
-// Run: cargo run --bin learn_13_08_proc_macro_use
+// concept_14_08_proc_macro_use — USING our own proc-macros (all 3 kinds).
+// Run: cargo run --bin concept_14_08_proc_macro_use
 //
-// The macros live in a SEPARATE crate (learn_13_proc_macro) because proc-macro
+// The macros live in a SEPARATE crate (concept_14_proc_macro) because proc-macro
 // crates compile into a compiler plugin and can't sit in src/bin/.
 //
 // Reminder: in #[derive(Hello)], `derive` is the compiler's built-in attribute
 // and `Hello` is our macro's name.
 //
-// See ../../learn_13_proc_macro/src/lib.rs for the implementations.
+// See ../../concept_14_proc_macro/src/lib.rs for the implementations.
 
 // Bring all three macros into scope.
-use learn_13_proc_macro::{Hello, log_call, make_answer};
+use concept_14_proc_macro::{Hello, log_call, make_answer};
 
 /* 1. DERIVE — #[derive(Hello)] generates: impl Dog { fn hello(&self) {...} } */
 #[derive(Hello)]
