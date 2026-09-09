@@ -1,3 +1,5 @@
+// concept_06_07_operator_overload — operator traits (Add, etc.).
+// Run: cargo run --bin concept_06_07_operator_overload
 #![allow(unused)]
 use std::ops::Add;
 

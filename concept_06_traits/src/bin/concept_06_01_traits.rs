@@ -1,5 +1,5 @@
-// learn_05_01_traits — traits are like interfaces.
-// Run: cargo run --bin learn_05_01_traits
+// concept_06_01_traits — traits are like interfaces.
+// Run: cargo run --bin concept_06_01_traits
 // Define shared behavior; types `impl` it. Methods can have default bodies.
 
 // Trait Object: value/obj whose concrete type is only known at runtime

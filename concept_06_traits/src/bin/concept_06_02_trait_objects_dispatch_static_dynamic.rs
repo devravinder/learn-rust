@@ -1,6 +1,6 @@
 #![allow(unused)]
-// learn_05_02_trait_objects — static dispatch (generics) vs dynamic (dyn).
-// Run: cargo run --bin learn_05_02_trait_objects
+// concept_06_02_trait_objects — static dispatch (generics) vs dynamic (dyn).
+// Run: cargo run --bin concept_06_02_trait_objects
 // impl Trait / <T: Trait> = compile-time (fast). dyn Trait = runtime (flexible).
 // Trait Object: value/obj whose concrete type is only known at runtime
 

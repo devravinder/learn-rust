@@ -55,7 +55,7 @@ Cargo package with runnable examples under `src/bin/`.
 - thiserror
 - anyhow
 
-### 06 — Traits  ·  _folder: (pending)_
+### 06 — Traits  ·  [`concept_06_traits`](concept_06_traits/)
 - traits (~ interfaces)
 - into, from
 - dispatch: static, dynamic

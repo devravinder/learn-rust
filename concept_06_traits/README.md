@@ -1,4 +1,4 @@
-# learn_05_traits — Traits (Rust's interfaces)
+# concept_06_traits — Traits (Rust's interfaces)
 
 Traits define shared behavior that types opt into. This is how Rust does
 polymorphism without inheritance.
@@ -7,9 +7,9 @@ polymorphism without inheritance.
 
 | # | Binary | Concept | Analogy |
 | --- | --- | --- | --- |
-| 01 | `learn_05_01_traits` | trait def, `impl`, default methods | `interface` + default methods |
-| 02 | `learn_05_02_trait_objects` | static (`impl Trait`) vs dynamic (`dyn`) | generics vs interface reference |
-| 03 | `learn_05_03_derive_display` | `#[derive(...)]`, manual `Display` | auto `equals/hashCode`, `toString` |
+| 01 | `concept_06_01_traits` | trait def, `impl`, default methods | `interface` + default methods |
+| 02 | `concept_06_02_trait_objects` | static (`impl Trait`) vs dynamic (`dyn`) | generics vs interface reference |
+| 03 | `concept_06_03_derive_display` | `#[derive(...)]`, manual `Display` | auto `equals/hashCode`, `toString` |
 
 ## Static vs dynamic dispatch
 

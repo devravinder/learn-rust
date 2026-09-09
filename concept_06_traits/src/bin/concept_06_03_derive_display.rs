@@ -1,5 +1,5 @@
-// learn_05_03_derive_display — derive common traits + implement Display.
-// Run: cargo run --bin learn_05_03_derive_display
+// concept_06_03_derive_display — derive common traits + implement Display.
+// Run: cargo run --bin concept_06_03_derive_display
 // #[derive(...)] auto-implements traits. Display is manual (user-facing text).
 use std::fmt;
 
