@@ -19,7 +19,7 @@ chapter, then finishes with procedural macros.
 | 05 | `learn_13_05_dsl` | a tiny DSL (`calculate! { eval ... }`) | DSL |
 | 06 | `learn_13_06_dry` | generate whole `fn`s + tests; `tt` designator | DRY |
 | 07 | `learn_13_07_derive_and_builtin` | derive (procedural) macros + built-ins | — |
-| 08 | `learn_13_08_proc_macro_use` | USE a custom `#[derive(Hello)]` proc-macro | — |
+| 08 | `learn_13_08_proc_macro_use` | USE custom proc-macros: derive + attribute + function-like | — |
 
 ```bash
 cargo run --bin learn_13_01_macro_rules
