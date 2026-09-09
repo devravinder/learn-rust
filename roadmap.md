@@ -1,9 +1,18 @@
 # Rust Roadmap
 
-- [Rust By Example](https://doc.rust-lang.org/stable/rust-by-example/index.html)
+A learning order tuned for developers coming from **JavaScript / TypeScript /
+Java**. Concepts build on each other top-to-bottom. Each concept folder is a
+Cargo package with runnable examples under `src/bin/`.
 
-## Core
+- Reference: [Rust By Example](https://doc.rust-lang.org/stable/rust-by-example/index.html)
+- Setup: [`setup.md`](setup.md)
 
+> Folder links are filled in as each concept folder is reordered/renamed to the
+> `concept_NN_*` convention. A checked box means the folder has been migrated.
+
+## Learning order
+
+### 01 — Core  ·  _folder: (pending)_
 - hello world
 - variables & constants
   - shadowing
@@ -18,39 +27,96 @@
 - arrays
 - strings & slices
   - String vs str
-- struct & Enum
-  - in build Enums
-- ownership
-  - move
-  - barrow
-  - stack vs heap
-- error handling
-- lifetime
-- traits
-  - into, from
-  - dispatch: static, dynamic
-  - trait bounds
-  - sized vs ?sized
-- generics
-- collections
-- iterators
-  - generic type vs associated type
-- closures
-- smart pointers
-  - Box
-  - RC ( Reference Count )
-  - Reference Cell
-  - Weak Reference
-  - ARC ( Atomic Reference Count ) - multi thread env
-  - Mutex - multi thread env
 
+### 02 — Ownership  ·  _folder: (pending)_
+- move
+- borrow
+- slices
+- stack vs heap
+
+### 03 — Modules & Crates  ·  _folder: (pending)_
+> Placed early: JS/Java devs expect a module system right after functions.
+- modules
+- file modules
+- crates & the workspace layout
+
+### 04 — Structs & Enums  ·  _folder: (pending)_
+- struct & methods
+- enum (with data)
+  - built-in enums
+- Option
+- pattern matching
+
+### 05 — Error Handling  ·  _folder: (pending)_
+> Placed early: the biggest mindset shift for exception-based (try/catch) devs.
+- Result
+- panic
+- the `?` operator
+- thiserror
+- anyhow
+
+### 06 — Traits  ·  _folder: (pending)_
+- traits (~ interfaces)
+- into, from
+- dispatch: static, dynamic
+- trait bounds
+- Sized vs ?Sized
+- operator overloading
+- derive / Display
+
+### 07 — Generics  ·  _folder: (pending)_
+- generics
+- trait bounds in generics
+
+### 08 — Collections  ·  _folder: (pending)_
+- Vec
+- HashMap
+- HashSet
+- String vs str
+
+### 09 — Closures & Iterators  ·  _folder: (pending)_
+- closures
+- Fn, FnMut, FnOnce
+- iterators
+  - iter, into_iter, iter_mut
+  - iterator adaptors
+  - generic type vs associated type
+- function pointers
+
+### 10 — Lifetimes  ·  _folder: (pending)_
+- lifetimes
+- struct lifetimes
+
+### 11 — Smart Pointers  ·  _folder: (pending)_
+- Box
+- Rc (Reference Count)
+- RefCell
+- Weak reference
+- Arc (Atomic Reference Count) — multi-thread env
+- Mutex — multi-thread env
+
+### 12 — Concurrency  ·  _folder: (pending)_
 - threads
-  - scoped threds
-  - channel
-  - Mutex
-  - Arc
-- Tokio ( Async runtime )
-  - native vs async
-- macros
-  - declarative
-  - procedural
+  - scoped threads
+- channels
+- Mutex
+- Arc
+
+### 13 — Async (Tokio)  ·  _folder: (pending)_
+- async / await
+- tasks
+- async channels
+- native vs async
+
+### 14 — Macros  ·  _folder: (pending)_
+- declarative (`macro_rules!`)
+- procedural (derive, attribute, function-like)
+
+### 15 — Unsafe & FFI  ·  _folder: (pending)_
+- unsafe
+- FFI
+
+## Projects & Desktop (not part of the reorder)
+
+Kept as-is: `proj_01_cli_todo`, `proj_02_file_parser`, `proj_03_web_api_axum`,
+`proj_04_grpc`, `tauri_01_notes`, `tauri_02_projects`, `capstone`.
