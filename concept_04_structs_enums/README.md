@@ -27,7 +27,7 @@ classDiagram
 ```
 
 Rust splits **data** (`struct`) from **behavior** (`impl`). There is no
-inheritance; you compose and use traits (see `learn_05_traits`) for shared
+inheritance; you compose and use traits (see `concept_06_traits`) for shared
 behavior.
 
 ## Why enums + Option matter

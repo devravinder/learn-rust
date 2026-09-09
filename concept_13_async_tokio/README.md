@@ -16,8 +16,8 @@ event loop, this will feel familiar — Tokio is the runtime that drives it.
 ```mermaid
 graph TD
     A[Concurrency need] --> B{CPU-bound or IO-bound?}
-    B -->|CPU-bound| T[OS threads<br/>learn_11]
-    B -->|IO-bound, many tasks| X[async + Tokio<br/>learn_12]
+    B -->|CPU-bound| T[OS threads<br/>concept_12]
+    B -->|IO-bound, many tasks| X[async + Tokio<br/>concept_13]
 ```
 
 ## Key points
@@ -30,5 +30,5 @@ graph TD
 - `tokio::spawn` schedules a task on the runtime's thread pool; await its handle
   for the result.
 - Use async for **IO-bound** work with many tasks (servers, clients); use OS
-  threads (`learn_11`) for **CPU-bound** parallelism. The web projects
+  threads (`concept_12_concurrency`) for **CPU-bound** parallelism. The web projects
   (`proj_03`, `proj_04`) build on this.

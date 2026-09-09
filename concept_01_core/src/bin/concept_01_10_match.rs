@@ -2,7 +2,7 @@
 // Run: cargo run --bin concept_01_10_match
 // Like switch, but exhaustive and an expression (returns a value).
 
-// also see: learn_03_05_pattern_matching
+// also see: concept_04_05_pattern_matching
 
 use std::cmp::Ordering;
 use std::io;

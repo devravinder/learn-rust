@@ -30,4 +30,4 @@ graph TD
 - Channels (`mpsc`) pass ownership of messages between threads — often cleaner
   than locks. Dropping all senders ends the receiver loop.
 - `Send`/`Sync` marker traits are what make this safe; most types are auto-`Send`.
-- Async concurrency (Tokio) is the next module (`learn_12`).
+- Async concurrency (Tokio) is the next module (`concept_13_async_tokio`).

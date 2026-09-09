@@ -101,18 +101,18 @@ directory and ONE `Cargo.lock`.
 ```text
 learn-rust/
 ├── Cargo.toml            # workspace: members + shared [workspace.dependencies]
-├── learn_01_core/        # each folder = one package (crate)
+├── concept_01_core/      # each folder = one package (crate)
 │   ├── Cargo.toml
 │   └── src/bin/          # each file here = one runnable binary
-├── learn_02_ownership/
+├── concept_02_ownership/
 ├── ...
 ├── proj_01_cli_todo/     # projects have a src/main.rs (one app)
 ├── ...
 └── capstone/             # standalone Tauri app (NOT a workspace member)
 ```
 
-- **Folders** are numbered sequentially (`learn_01_`, `learn_02_`, ...).
-- **Binary names** are globally unique (`learn_01_01_hello`) so
+- **Folders** are named `concept_01_`, `concept_02_`, ... in learning order.
+- **Binary names** are globally unique (`concept_01_01_hello`) so
   `cargo run --bin <name>` (and the VS Code shortcut) works from anywhere.
 - **Run any concept** from the workspace root: `cargo run --bin learn_01_01_hello`.
 - **Add a new package**: create the folder + its `Cargo.toml`, then add it to the

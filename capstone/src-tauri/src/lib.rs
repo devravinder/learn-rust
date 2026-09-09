@@ -1,7 +1,7 @@
 // Rust core for the capstone Tauri app.
 // Three commands exposed to the React frontend, backed by in-memory shared state
-// (Arc<Mutex<...>> via tauri::State) — the same ownership concepts from learn_02
-// and learn_11 applied in a real app.
+// (Arc<Mutex<...>> via tauri::State) — the same ownership concepts from concept_02
+// and concept_12 applied in a real app.
 use serde::{Deserialize, Serialize};
 use std::sync::Mutex;
 use tauri::State;

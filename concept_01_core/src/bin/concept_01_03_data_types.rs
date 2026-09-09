@@ -52,7 +52,7 @@ fn main() {
     let data: [i32; 5] = [1, 2, 3, 4, 5];
     let zeros = [0u8; 4]; // [0,0,0,0]
     println!("{data:?} len={} {zeros:?}", data.len());
-    // Growable lists = Vec<T> (see learn_40).
+    // Growable lists = Vec<T> (see concept_08_collections).
 
     // No implicit numeric conversion; cast with `as`.
     let a: u8 = 10;

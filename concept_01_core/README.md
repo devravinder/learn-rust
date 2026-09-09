@@ -28,7 +28,7 @@ Run any concept with `cargo run --bin <name>`.
 The original set had the guessing game and error handling appear *before*
 functions, `if`, `match`, and loops. Those examples actually USE those concepts,
 so they were reordered: concepts first, then the `guess_number` capstone last.
-(Standalone error handling now lives in its own `learn_06_error_handling`.)
+(Standalone error handling now lives in its own `concept_05_error_handling`.)
 
 ```mermaid
 graph LR

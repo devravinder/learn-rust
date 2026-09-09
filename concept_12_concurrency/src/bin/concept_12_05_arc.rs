@@ -1,5 +1,5 @@
-// learn_09_03_arc — Arc<T>: atomic (thread-safe) reference counting.
-// Run: cargo run --bin learn_09_03_arc
+// concept_12_05_arc — Arc<T>: atomic (thread-safe) reference counting.
+// Run: cargo run --bin concept_12_05_arc
 // Arc = Rc for multiple THREADS. Pair with Mutex to share mutable state safely.
 use std::sync::{ Arc, Mutex };
 use std::thread;

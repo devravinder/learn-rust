@@ -72,10 +72,10 @@ capstone/
 
 ## What it demonstrates from the roadmap
 
-- **Structs + serde** (`learn_03`, `proj_01`): `Todo` crosses the IPC bridge as JSON.
-- **Shared state / ownership** (`learn_02`, `learn_11`): `Arc<Mutex<Vec<Todo>>>`
+- **Structs + serde** (`concept_04`, `proj_01`): `Todo` crosses the IPC bridge as JSON.
+- **Shared state / ownership** (`concept_02`, `concept_12`): `Arc<Mutex<Vec<Todo>>>`
   via `tauri::State`.
-- **Traits/derive** (`learn_05`): `#[derive(Serialize, Deserialize, Clone)]`.
+- **Traits/derive** (`concept_06`): `#[derive(Serialize, Deserialize, Clone)]`.
 - **Tauri IPC** (`tauri_01_notes`): `#[tauri::command]` + `invoke`.
 - Frontend skills you already have (React/TS) driving a Rust backend.
 

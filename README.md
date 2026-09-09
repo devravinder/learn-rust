@@ -10,22 +10,22 @@ already know.
 This is a **Cargo workspace**: one repo, many small packages (crates), one
 shared `target/` build directory.
 
-- Folders are numbered sequentially (`learn_01_`, `learn_02_`, ...) in the
-  intended learning order.
+- Folders are named `concept_01_`, `concept_02_`, ... in the intended learning
+  order (see [`roadmap.md`](roadmap.md)).
 - Each folder is a Cargo package. Concepts live as separate executables under
   `src/bin/`.
 - Every binary name is **globally unique** (prefixed with its folder number,
-  e.g. `learn_01_01_hello`). This keeps the VS Code shortcut working from
+  e.g. `concept_01_01_hello`). This keeps the VS Code shortcut working from
   anywhere in the workspace.
 
 ### Running a concept
 
 ```bash
 # From anywhere in the workspace:
-cargo run --bin learn_01_02_variables
+cargo run --bin concept_01_02_variables
 
 # Or classic (cd into the folder first):
-cd learn_01_core && cargo run --bin learn_01_02_variables
+cd concept_01_core && cargo run --bin concept_01_02_variables
 ```
 
 VS Code shortcut (unchanged — works because binary names are unique):
@@ -44,25 +44,26 @@ VS Code shortcut (unchanged — works because binary names are unique):
 graph TD
     subgraph Basics
         A[concept_01_core<br/>vars, types, functions, control flow] --> B[concept_02_ownership<br/>ownership, borrow, slices]
-        B --> C[concept_04_structs_enums<br/>structs, enums, Option, match]
+        B --> C[concept_03_modules_crates<br/>modules, file modules]
+        C --> D[concept_04_structs_enums<br/>structs, enums, Option, match]
+        D --> E[concept_05_error_handling<br/>Result, ?, thiserror, anyhow]
     end
     subgraph Intermediate
-        C --> D[concept_08_collections<br/>Vec, HashMap, generics]
-        D --> E[concept_06_traits<br/>traits ~ interfaces]
-        E --> F[concept_05_error_handling<br/>Result, ?, thiserror, anyhow]
-        F --> P1[proj_01_cli_todo<br/>clap + serde]
-        P1 --> G[concept_03_modules_crates]
-        G --> H[concept_09_closures_iterators]
-        H --> I[concept_11_smart_pointers<br/>Box, Rc, RefCell, Arc]
+        E --> F[concept_06_traits<br/>traits ~ interfaces]
+        F --> G[concept_07_generics<br/>&lt;T&gt; + bounds]
+        G --> H[concept_08_collections<br/>Vec, HashMap, HashSet]
+        H --> P1[proj_01_cli_todo<br/>clap + serde]
+        P1 --> I[concept_09_closures_iterators]
         I --> J[concept_10_lifetimes]
-        J --> P2[proj_02_file_parser<br/>CSV/JSON]
+        J --> K[concept_11_smart_pointers<br/>Box, Rc, RefCell, Arc]
+        K --> P2[proj_02_file_parser<br/>CSV/JSON]
     end
     subgraph Advanced
-        P2 --> K[concept_12_concurrency<br/>threads, Mutex, channels]
-        K --> L[concept_13_async_tokio<br/>async/await, Tokio]
-        L --> M[concept_14_macros]
-        M --> N[concept_15_unsafe_ffi]
-        N --> P3[proj_03_web_api_axum<br/>Axum + Tokio + sqlx]
+        P2 --> L[concept_12_concurrency<br/>threads, Mutex, channels]
+        L --> M[concept_13_async_tokio<br/>async/await, Tokio]
+        M --> N[concept_14_macros<br/>declarative + procedural]
+        N --> O[concept_15_unsafe_ffi<br/>unsafe, FFI]
+        O --> P3[proj_03_web_api_axum<br/>Axum + Tokio + sqlx]
         P3 --> P4[proj_04_grpc<br/>tonic gRPC]
     end
     subgraph Desktop

@@ -33,4 +33,4 @@ graph TD
 - `RefCell<T>`: move borrow checking to **runtime**, allowing mutation through a
   shared reference (panics if you break the rules at runtime).
 - `Arc<T>`: atomic `Rc` for threads; combine with `Mutex<T>` for shared mutable
-  state. (More concurrency in `learn_110`.)
+  state. (More concurrency in `concept_12_concurrency`.)
