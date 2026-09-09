@@ -43,7 +43,7 @@ VS Code shortcut (unchanged — works because binary names are unique):
 ```mermaid
 graph TD
     subgraph Basics
-        A[learn_01_core<br/>vars, types, functions, control flow] --> B[learn_02_ownership<br/>ownership, borrow, slices]
+        A[concept_01_core<br/>vars, types, functions, control flow] --> B[learn_02_ownership<br/>ownership, borrow, slices]
         B --> C[learn_03_structs_enums<br/>structs, enums, Option, match]
     end
     subgraph Intermediate

@@ -1,5 +1,5 @@
-// learn_01_08_functions — declaring & calling functions.
-// Run: cargo run --bin learn_01_08_functions
+// concept_01_08_functions — declaring & calling functions.
+// Run: cargo run --bin concept_01_08_functions
 // Param/return types are mandatory. Last expression (no `;`) is the return value.
 fn main() {
     greet("Ravinder");

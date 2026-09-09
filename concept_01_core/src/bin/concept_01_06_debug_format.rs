@@ -1,5 +1,5 @@
-// learn_01_06_debug_format — Display vs Debug.
-// Run: cargo run --bin learn_01_06_debug_format
+// concept_01_06_debug_format — Display vs Debug.
+// Run: cargo run --bin concept_01_06_debug_format
 // {}   -> Display (user-facing)
 // {:?}  -> Debug (dev-facing), {:#?} pretty. Derive with #[derive(Debug)].
 fn main() {

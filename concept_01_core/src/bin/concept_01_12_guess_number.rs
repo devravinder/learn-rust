@@ -1,5 +1,5 @@
-// learn_01_12_guess_number — mini-project combining the core concepts.
-// Run: cargo run --bin learn_01_12_guess_number
+// concept_01_12_guess_number — mini-project combining the core concepts.
+// Run: cargo run --bin concept_01_12_guess_number
 // Uses: loop, match on Ordering, parse-with-Result (continue on bad input).
 use std::cmp::Ordering;
 use std::io;

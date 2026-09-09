@@ -1,5 +1,5 @@
-// learn_01_07_strings — String vs &str + stdin.
-// Run: cargo run --bin learn_01_07_strings
+// concept_01_07_strings — String vs &str + stdin.
+// Run: cargo run --bin concept_01_07_strings
 // String = owned, growable (heap)
 // &str = borrowed, read-only view. It is slice (Pointer). Known size at compile time
 use std::io;

@@ -1,5 +1,5 @@
-// learn_01_03_data_types — scalar & compound types.
-// Run: cargo run --bin learn_01_03_data_types
+// concept_01_03_data_types — scalar & compound types.
+// Run: cargo run --bin concept_01_03_data_types
 // Unlike JS's single `number`, you pick size/signedness (like Java).
 fn main() {
     // Scalars: integers (iN/uN), floats (f32/f64), bool, char.

@@ -12,7 +12,7 @@ Cargo package with runnable examples under `src/bin/`.
 
 ## Learning order
 
-### 01 — Core  ·  _folder: (pending)_
+### 01 — Core  ·  [`concept_01_core`](concept_01_core/)
 - hello world
 - variables & constants
   - shadowing

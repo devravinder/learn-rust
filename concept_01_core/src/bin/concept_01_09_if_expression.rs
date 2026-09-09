@@ -1,5 +1,5 @@
-// learn_01_09_if_expression — `if` returns a value.
-// Run: cargo run --bin learn_01_09_if_expression
+// concept_01_09_if_expression — `if` returns a value.
+// Run: cargo run --bin concept_01_09_if_expression
 // Like a ternary for whole blocks; all branches must be the same type.
 use std::io;
 use rand::prelude::*;

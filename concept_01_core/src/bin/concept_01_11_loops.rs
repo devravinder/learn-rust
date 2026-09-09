@@ -1,5 +1,5 @@
-// learn_01_11_loops — loop / while / for.
-// Run: cargo run --bin learn_01_11_loops
+// concept_01_11_loops — loop / while / for.
+// Run: cargo run --bin concept_01_11_loops
 // No C-style for; use ranges. `loop` can return a value via `break value`.
 fn main() {
     // loop returning a value

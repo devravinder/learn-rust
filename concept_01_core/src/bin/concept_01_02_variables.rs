@@ -1,5 +1,5 @@
-// learn_01_02_variables — let vs let mut.
-// Run: cargo run --bin learn_01_02_variables
+// concept_01_02_variables — let vs let mut.
+// Run: cargo run --bin concept_01_02_variables
 // let x   -> immutable (like `const` in JS)
 // let mut -> mutable   (like `let` in JS)
 fn main() {

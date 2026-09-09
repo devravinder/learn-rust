@@ -1,5 +1,5 @@
-// learn_01_05_shadowing — re-declare a name with `let`.
-// Run: cargo run --bin learn_01_05_shadowing
+// concept_01_05_shadowing — re-declare a name with `let`.
+// Run: cargo run --bin concept_01_05_shadowing
 // Differs from `mut`: shadowing makes a NEW variable and can change type.
 fn main() {
     let x = 5;

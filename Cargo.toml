@@ -18,7 +18,7 @@
 resolver = "3" # resolver v3 is the default for edition 2024
 
 members = [
-    "learn_01_core",
+    "concept_01_core",
     "learn_02_ownership",
     "learn_03_structs_enums",
     "learn_04_collections_generics",

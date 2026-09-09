@@ -1,4 +1,4 @@
-# learn_01_core — Rust Core Basics
+# concept_01_core — Rust Core Basics
 
 The foundation: how to declare data, control flow, and structure a program.
 Everything here maps closely to Java/TS, with a few Rust twists called out in
@@ -10,18 +10,18 @@ Run any concept with `cargo run --bin <name>`.
 
 | # | Binary | Concept | Familiar analogy |
 | --- | --- | --- | --- |
-| 01 | `learn_01_01_hello` | `main`, `println!` macro | `System.out.println` / `console.log` |
-| 02 | `learn_01_02_variables` | `let` vs `let mut`, formatting | `const` vs `let` |
-| 03 | `learn_01_03_data_types` | integers, floats, bool, char, tuple, array | Java primitives + tuples |
-| 04 | `learn_01_04_constants` | `const`, compile-time values | `static final` |
-| 05 | `learn_01_05_shadowing` | re-`let` a name, change type | block-scoped `let` |
-| 06 | `learn_01_06_debug_format` | `{}` Display vs `{:?}` Debug | `toString()` vs `JSON.stringify` |
-| 07 | `learn_01_07_strings` | `String` vs `&str`, stdin | `StringBuilder` vs read-only view |
-| 08 | `learn_01_08_functions` | fn signatures, expression return | typed functions |
-| 09 | `learn_01_09_if_expression` | `if` returns a value | ternary for whole blocks |
-| 10 | `learn_01_10_match` | exhaustive pattern matching | supercharged `switch` |
-| 11 | `learn_01_11_loops` | `loop` / `while` / `for` | loops (no C-style for) |
-| 12 | `learn_01_12_guess_number` | **mini-project** combining all above | — |
+| 01 | `concept_01_01_hello` | `main`, `println!` macro | `System.out.println` / `console.log` |
+| 02 | `concept_01_02_variables` | `let` vs `let mut`, formatting | `const` vs `let` |
+| 03 | `concept_01_03_data_types` | integers, floats, bool, char, tuple, array | Java primitives + tuples |
+| 04 | `concept_01_04_constants` | `const`, compile-time values | `static final` |
+| 05 | `concept_01_05_shadowing` | re-`let` a name, change type | block-scoped `let` |
+| 06 | `concept_01_06_debug_format` | `{}` Display vs `{:?}` Debug | `toString()` vs `JSON.stringify` |
+| 07 | `concept_01_07_strings` | `String` vs `&str`, stdin | `StringBuilder` vs read-only view |
+| 08 | `concept_01_08_functions` | fn signatures, expression return | typed functions |
+| 09 | `concept_01_09_if_expression` | `if` returns a value | ternary for whole blocks |
+| 10 | `concept_01_10_match` | exhaustive pattern matching | supercharged `switch` |
+| 11 | `concept_01_11_loops` | `loop` / `while` / `for` | loops (no C-style for) |
+| 12 | `concept_01_12_guess_number` | **mini-project** combining all above | — |
 
 ## Why this order?
 

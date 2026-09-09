@@ -1,5 +1,5 @@
-// learn_01_10_match — exhaustive pattern matching.
-// Run: cargo run --bin learn_01_10_match
+// concept_01_10_match — exhaustive pattern matching.
+// Run: cargo run --bin concept_01_10_match
 // Like switch, but exhaustive and an expression (returns a value).
 
 // also see: learn_03_05_pattern_matching

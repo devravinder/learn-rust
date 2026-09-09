@@ -1,5 +1,5 @@
-// learn_01_04_constants — const (compile-time, always immutable).
-// Run: cargo run --bin learn_01_04_constants
+// concept_01_04_constants — const (compile-time, always immutable).
+// Run: cargo run --bin concept_01_04_constants
 // Like `static final` in Java. Type annotation required.
 fn main() {
     const DEVELOPER_AGE: u32 = 30;
