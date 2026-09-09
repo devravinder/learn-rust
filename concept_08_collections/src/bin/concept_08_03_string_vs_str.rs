@@ -1,5 +1,5 @@
-// learn_04_03_string_vs_str — owned String vs borrowed &str, in practice.
-// Run: cargo run --bin learn_04_03_string_vs_str
+// concept_08_03_string_vs_str — owned String vs borrowed &str, in practice.
+// Run: cargo run --bin concept_08_03_string_vs_str
 // Take &str as params (accepts both); build/return String.
 fn main() {
     let owned: String = String::from("hello");

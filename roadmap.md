@@ -68,7 +68,7 @@ Cargo package with runnable examples under `src/bin/`.
 - generics
 - trait bounds in generics
 
-### 08 — Collections  ·  _folder: (pending)_
+### 08 — Collections  ·  [`concept_08_collections`](concept_08_collections/)
 - Vec
 - HashMap
 - HashSet

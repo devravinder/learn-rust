@@ -1,5 +1,5 @@
-// learn_04_01_vectors — Vec<T>, a growable heap array.
-// Run: cargo run --bin learn_04_01_vectors
+// concept_08_01_vectors — Vec<T>, a growable heap array.
+// Run: cargo run --bin concept_08_01_vectors
 // Like ArrayList / JS array. Same-type elements, indexable, iterable.
 fn main() {
     let mut v: Vec<i32> = Vec::new();

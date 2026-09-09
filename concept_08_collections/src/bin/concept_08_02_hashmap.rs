@@ -1,5 +1,5 @@
-// learn_04_02_hashmap — HashMap<K, V> key/value store.
-// Run: cargo run --bin learn_04_02_hashmap
+// concept_08_02_hashmap — HashMap<K, V> key/value store.
+// Run: cargo run --bin concept_08_02_hashmap
 // Like Java HashMap / JS Map. get() returns Option; entry() upserts.
 use std::collections::HashMap;
 

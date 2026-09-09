@@ -47,7 +47,7 @@ graph TD
         B --> C[concept_04_structs_enums<br/>structs, enums, Option, match]
     end
     subgraph Intermediate
-        C --> D[learn_04_collections_generics<br/>Vec, HashMap, generics]
+        C --> D[concept_08_collections<br/>Vec, HashMap, generics]
         D --> E[concept_06_traits<br/>traits ~ interfaces]
         E --> F[concept_05_error_handling<br/>Result, ?, thiserror, anyhow]
         F --> P1[proj_01_cli_todo<br/>clap + serde]

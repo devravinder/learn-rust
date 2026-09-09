@@ -21,7 +21,7 @@ members = [
     "concept_01_core",
     "concept_02_ownership",
     "concept_04_structs_enums",
-    "learn_04_collections_generics",
+    "concept_08_collections",
     "concept_06_traits",
     "concept_07_generics",
     "concept_05_error_handling",
