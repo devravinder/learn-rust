@@ -1,5 +1,5 @@
-// learn_02_03_slices — a slice is a borrowed VIEW into a contiguous sequence.
-// Run: cargo run --bin learn_02_03_slices
+// concept_02_03_slices — a slice is a borrowed VIEW into a contiguous sequence.
+// Run: cargo run --bin concept_02_03_slices
 // &str is a string slice; &[T] is an array/vec slice. No copying, just a window.
 // slice = reference to continuos memory
 fn main() {

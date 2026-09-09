@@ -1,5 +1,5 @@
-// learn_02_02_borrowing — references (&) let you use a value without owning it.
-// Run: cargo run --bin learn_02_02_borrowing
+// concept_02_02_borrowing — references (&) let you use a value without owning it.
+// Run: cargo run --bin concept_02_02_borrowing
 // &T = shared/immutable borrow (many allowed). &mut T = exclusive/mutable borrow (one).
 // Rule: any number of &T, OR exactly one &mut T, never both at once.
 fn main() {

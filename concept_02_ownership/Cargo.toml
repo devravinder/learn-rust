@@ -1,5 +1,5 @@
 [package]
-name = "learn_02_ownership"
+name = "concept_02_ownership"
 version = "0.1.0"
 edition = "2024"
 

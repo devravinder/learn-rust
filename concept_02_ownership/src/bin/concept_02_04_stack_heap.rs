@@ -1,5 +1,5 @@
-// learn_02_04_stack_heap — where values live and why ownership exists.
-// Run: cargo run --bin learn_02_04_stack_heap
+// concept_02_04_stack_heap — where values live and why ownership exists.
+// Run: cargo run --bin concept_02_04_stack_heap
 // Stack: fixed-size, fast, LIFO (i32, bool, arrays). Heap: dynamic-size (String, Vec).
 // Ownership tracks heap allocations so they're freed exactly once, no GC needed.
 fn main() {

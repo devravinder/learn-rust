@@ -1,4 +1,4 @@
-# learn_02_ownership — Ownership, Borrowing, Slices
+# concept_02_ownership — Ownership, Borrowing, Slices
 
 The one big idea with **no equivalent** in Java/JS/TS. Rust has no garbage
 collector; instead the compiler tracks who *owns* each value and frees it
@@ -8,10 +8,10 @@ automatically when the owner goes out of scope.
 
 | # | Binary | Concept |
 | --- | --- | --- |
-| 01 | `learn_02_01_ownership_move` | ownership rules, move vs copy, `clone` |
-| 02 | `learn_02_02_borrowing` | `&` shared vs `&mut` exclusive references |
-| 03 | `learn_02_03_slices` | `&str` / `&[T]` borrowed views |
-| 04 | `learn_02_04_stack_heap` | where values live, why ownership exists |
+| 01 | `concept_02_01_ownership_move` | ownership rules, move vs copy, `clone` |
+| 02 | `concept_02_02_borrowing` | `&` shared vs `&mut` exclusive references |
+| 03 | `concept_02_03_slices` | `&str` / `&[T]` borrowed views |
+| 04 | `concept_02_04_stack_heap` | where values live, why ownership exists |
 
 ## The three rules
 

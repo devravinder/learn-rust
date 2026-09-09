@@ -1,5 +1,5 @@
-// learn_02_01_ownership_move — the ownership rules + move semantics.
-// Run: cargo run --bin learn_02_01_ownership_move
+// concept_02_01_ownership_move — the ownership rules + move semantics.
+// Run: cargo run --bin concept_02_01_ownership_move
 // Rules: each value has ONE owner; when the owner goes out of scope, value is dropped.
 // Assigning/passing a heap value MOVES ownership (unlike JS reference copy or Java).
 fn main() {

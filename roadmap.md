@@ -28,7 +28,7 @@ Cargo package with runnable examples under `src/bin/`.
 - strings & slices
   - String vs str
 
-### 02 — Ownership  ·  _folder: (pending)_
+### 02 — Ownership  ·  [`concept_02_ownership`](concept_02_ownership/)
 - move
 - borrow
 - slices
