@@ -37,8 +37,7 @@ members = [
     "learn_13_proc_macro",
     "learn_14_unsafe_ffi",
     "proj_03_web_api_axum",
-    "proj_04_grpc",
-    "learn_01_core_relearn"
+    "proj_04_grpc"
 ]
 
 # Shared dependency versions live here so every member can reference them with
