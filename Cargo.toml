@@ -23,6 +23,7 @@ members = [
     "concept_04_structs_enums",
     "learn_04_collections_generics",
     "concept_06_traits",
+    "concept_07_generics",
     "concept_05_error_handling",
     "proj_01_cli_todo",
     "concept_03_modules_crates",

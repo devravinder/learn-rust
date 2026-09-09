@@ -64,7 +64,7 @@ Cargo package with runnable examples under `src/bin/`.
 - operator overloading
 - derive / Display
 
-### 07 — Generics  ·  _folder: (pending)_
+### 07 — Generics  ·  [`concept_07_generics`](concept_07_generics/)
 - generics
 - trait bounds in generics
 

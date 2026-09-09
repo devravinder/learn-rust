@@ -1,5 +1,5 @@
-// learn_04_04_generics — generic functions & structs.
-// Run: cargo run --bin learn_04_04_generics
+// concept_07_01_generics — generic functions & structs.
+// Run: cargo run --bin concept_07_01_generics
 // Like Java/TS generics <T>. Bounds (T: Trait) constrain what T must support.
 use std::fmt::Display;
 
