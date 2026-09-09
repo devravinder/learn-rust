@@ -1,4 +1,4 @@
-# learn_14_unsafe_ffi — Unsafe Rust & FFI
+# concept_15_unsafe_ffi — Unsafe Rust & FFI
 
 Rust's escape hatch for low-level work: interfacing with C, hardware, or
 performance-critical code the borrow checker can't verify. Used sparingly and
@@ -8,8 +8,8 @@ wrapped in safe APIs.
 
 | # | Binary | Concept |
 | --- | --- | --- |
-| 01 | `learn_14_01_unsafe` | `unsafe` blocks, raw pointers, unsafe fns |
-| 02 | `learn_14_02_ffi` | `extern "C"` — calling C from Rust |
+| 01 | `concept_15_01_unsafe` | `unsafe` blocks, raw pointers, unsafe fns |
+| 02 | `concept_15_02_ffi` | `extern "C"` — calling C from Rust |
 
 ## What `unsafe` actually unlocks
 

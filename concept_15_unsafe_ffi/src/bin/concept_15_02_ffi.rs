@@ -1,5 +1,5 @@
-// learn_14_02_ffi — call C functions from Rust (Foreign Function Interface).
-// Run: cargo run --bin learn_14_02_ffi
+// concept_15_02_ffi — call C functions from Rust (Foreign Function Interface).
+// Run: cargo run --bin concept_15_02_ffi
 // `extern "C"` declares functions with the C ABI. Calling them is `unsafe`
 // because the compiler can't verify the foreign code. This is how crates wrap
 // C libraries — and conceptually how Tauri bridges to native APIs.

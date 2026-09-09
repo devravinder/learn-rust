@@ -1,5 +1,5 @@
 [package]
-name = "learn_14_unsafe_ffi"
+name = "concept_15_unsafe_ffi"
 version = "0.1.0"
 edition = "2024"
 

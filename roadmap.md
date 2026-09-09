@@ -112,7 +112,7 @@ Cargo package with runnable examples under `src/bin/`.
 - declarative (`macro_rules!`)
 - procedural (derive, attribute, function-like)
 
-### 15 — Unsafe & FFI  ·  _folder: (pending)_
+### 15 — Unsafe & FFI  ·  [`concept_15_unsafe_ffi`](concept_15_unsafe_ffi/)
 - unsafe
 - FFI
 

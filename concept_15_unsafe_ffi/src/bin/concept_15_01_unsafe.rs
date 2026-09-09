@@ -1,5 +1,5 @@
-// learn_14_01_unsafe — the `unsafe` keyword: opt out of some compiler checks.
-// Run: cargo run --bin learn_14_01_unsafe
+// concept_15_01_unsafe — the `unsafe` keyword: opt out of some compiler checks.
+// Run: cargo run --bin concept_15_01_unsafe
 // `unsafe` does NOT turn off the borrow checker. It only unlocks 5 abilities,
 // mainly: deref raw pointers, call unsafe fns, access/modify static mut, etc.
 // You promise the compiler you've upheld the invariants it can't verify.
