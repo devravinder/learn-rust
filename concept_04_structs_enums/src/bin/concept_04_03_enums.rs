@@ -1,3 +1,4 @@
+#![allow(unused)]
 // concept_04_03_enums — enums are tagged unions (each variant can carry data).
 // Run: cargo run --bin concept_04_03_enums
 // Like TS discriminated unions / Java sealed classes. Match to handle each variant.
