@@ -109,7 +109,7 @@ graph TD
 
 ## Prerequisites
 
-See [`learn_00_setup/setup.md`](learn_00_setup/setup.md).
+See [`setup.md`](setup.md).
 
 ## Reference
 
