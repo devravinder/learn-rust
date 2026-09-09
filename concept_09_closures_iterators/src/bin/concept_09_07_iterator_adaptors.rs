@@ -1,3 +1,5 @@
+// concept_09_07_iterator_adaptors — map/filter/etc. adaptor chains.
+// Run: cargo run --bin concept_09_07_iterator_adaptors
 #![allow(unused)]
 
 /*

@@ -1,5 +1,5 @@
-// learn_08_01_closures — anonymous functions that capture their environment.
-// Run: cargo run --bin learn_08_01_closures
+// concept_09_01_closures — anonymous functions that capture their environment.
+// Run: cargo run --bin concept_09_01_closures
 // |args| body — like JS arrow functions. They can capture surrounding variables.
 
 // Closure = anonymous function + capture variables in the environment

@@ -1,5 +1,5 @@
-// learn_08_02_iterators — lazy iterator adapters.
-// Run: cargo run --bin learn_08_02_iterators
+// concept_09_02_iterators — lazy iterator adapters.
+// Run: cargo run --bin concept_09_02_iterators
 // map/filter/collect etc. — like JS array methods, but LAZY until a consumer runs.
 fn main() {
     let nums = vec![1, 2, 3, 4, 5, 6];

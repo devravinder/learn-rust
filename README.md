@@ -52,7 +52,7 @@ graph TD
         E --> F[concept_05_error_handling<br/>Result, ?, thiserror, anyhow]
         F --> P1[proj_01_cli_todo<br/>clap + serde]
         P1 --> G[concept_03_modules_crates]
-        G --> H[learn_08_closures_iterators]
+        G --> H[concept_09_closures_iterators]
         H --> I[learn_09_smart_pointers<br/>Box, Rc, RefCell, Arc]
         I --> J[learn_10_lifetimes]
         J --> P2[proj_02_file_parser<br/>CSV/JSON]

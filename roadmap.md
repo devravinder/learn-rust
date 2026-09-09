@@ -74,7 +74,7 @@ Cargo package with runnable examples under `src/bin/`.
 - HashSet
 - String vs str
 
-### 09 — Closures & Iterators  ·  _folder: (pending)_
+### 09 — Closures & Iterators  ·  [`concept_09_closures_iterators`](concept_09_closures_iterators/)
 - closures
 - Fn, FnMut, FnOnce
 - iterators

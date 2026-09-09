@@ -1,3 +1,5 @@
+// concept_09_08_function_pointer — fn pointers alongside closures.
+// Run: cargo run --bin concept_09_08_function_pointer
 #![allow(unused)]
 
 fn add(x: u32, y: u32)-> u32{
