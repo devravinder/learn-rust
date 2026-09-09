@@ -1,5 +1,5 @@
-// learn_09_02_rc_refcell — Rc<T> shared ownership + RefCell<T> interior mutability.
-// Run: cargo run --bin learn_09_02_rc_refcell
+// concept_11_02_rc_refcell — Rc<T> shared ownership + RefCell<T> interior mutability.
+// Run: cargo run --bin concept_11_02_rc_refcell
 // Rc = multiple owners (single-thread, reference counted).
 // RefCell = mutate through a shared ref, borrow-checked at RUNTIME.
 use std::cell::RefCell;

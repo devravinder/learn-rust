@@ -1,4 +1,4 @@
-# learn_09_smart_pointers — Box, Rc, RefCell, Arc
+# concept_11_smart_pointers — Box, Rc, RefCell, Arc
 
 Types that own heap data and add capabilities (shared ownership, interior
 mutability, thread-safety) while keeping Rust's safety guarantees.
@@ -7,9 +7,9 @@ mutability, thread-safety) while keeping Rust's safety guarantees.
 
 | # | Binary | Type | Use for |
 | --- | --- | --- | --- |
-| 01 | `learn_09_01_box` | `Box<T>` | single owner, heap, recursive types |
-| 02 | `learn_09_02_rc_refcell` | `Rc<T>`, `RefCell<T>` | shared ownership + runtime-checked mutation |
-| 03 | `learn_09_03_arc` | `Arc<T>`, `Mutex<T>` | shared state across threads |
+| 01 | `concept_11_01_box` | `Box<T>` | single owner, heap, recursive types |
+| 02 | `concept_11_02_rc_refcell` | `Rc<T>`, `RefCell<T>` | shared ownership + runtime-checked mutation |
+| 03 | `concept_11_03_arc` | `Arc<T>`, `Mutex<T>` | shared state across threads |
 
 ## Choosing a smart pointer
 

@@ -28,7 +28,7 @@ members = [
     "proj_01_cli_todo",
     "concept_03_modules_crates",
     "concept_09_closures_iterators",
-    "learn_09_smart_pointers",
+    "concept_11_smart_pointers",
     "concept_10_lifetimes",
     "proj_02_file_parser",
     "learn_11_concurrency",

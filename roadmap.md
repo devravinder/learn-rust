@@ -87,7 +87,7 @@ Cargo package with runnable examples under `src/bin/`.
 - lifetimes
 - struct lifetimes
 
-### 11 — Smart Pointers  ·  _folder: (pending)_
+### 11 — Smart Pointers  ·  [`concept_11_smart_pointers`](concept_11_smart_pointers/)
 - Box
 - Rc (Reference Count)
 - RefCell

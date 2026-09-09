@@ -53,7 +53,7 @@ graph TD
         F --> P1[proj_01_cli_todo<br/>clap + serde]
         P1 --> G[concept_03_modules_crates]
         G --> H[concept_09_closures_iterators]
-        H --> I[learn_09_smart_pointers<br/>Box, Rc, RefCell, Arc]
+        H --> I[concept_11_smart_pointers<br/>Box, Rc, RefCell, Arc]
         I --> J[concept_10_lifetimes]
         J --> P2[proj_02_file_parser<br/>CSV/JSON]
     end

@@ -5,8 +5,8 @@ use std::io::{ self, Read };
 use std::error::Error;
 
 
-// learn_09_01_box — Box<T>: single-owner heap allocation.
-// Run: cargo run --bin learn_09_01_box
+// concept_11_01_box — Box<T>: single-owner heap allocation.
+// Run: cargo run --bin concept_11_01_box
 // Use Box for large data or recursive types (size unknown at compile time).
 
 /*
@@ -58,7 +58,7 @@ struct Tree {
 
 fn main() {
 
-    let path = "C:/work_spaces/rust/learn-rust/learn_09_smart_pointers/src/bin/number.txt";
+    let path = "C:/work_spaces/rust/learn-rust/concept_11_smart_pointers/src/bin/number.txt";
 
     let s = read_file(path);
 
