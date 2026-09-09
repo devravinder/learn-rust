@@ -34,7 +34,7 @@ Cargo package with runnable examples under `src/bin/`.
 - slices
 - stack vs heap
 
-### 03 — Modules & Crates  ·  _folder: (pending)_
+### 03 — Modules & Crates  ·  [`concept_03_modules_crates`](concept_03_modules_crates/)
 > Placed early: JS/Java devs expect a module system right after functions.
 - modules
 - file modules

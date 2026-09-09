@@ -1,5 +1,5 @@
-// learn_07_01_modules — mod, pub, use, paths.
-// Run: cargo run --bin learn_07_01_modules
+// concept_03_01_modules — mod, pub, use, paths.
+// Run: cargo run --bin concept_03_01_modules
 // Modules namespace your code (like TS namespaces / Java packages).
 // Items are PRIVATE by default; `pub` exposes them.
 

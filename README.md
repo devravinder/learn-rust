@@ -51,7 +51,7 @@ graph TD
         D --> E[learn_05_traits<br/>traits ~ interfaces]
         E --> F[learn_06_error_handling<br/>Result, ?, thiserror, anyhow]
         F --> P1[proj_01_cli_todo<br/>clap + serde]
-        P1 --> G[learn_07_modules_crates]
+        P1 --> G[concept_03_modules_crates]
         G --> H[learn_08_closures_iterators]
         H --> I[learn_09_smart_pointers<br/>Box, Rc, RefCell, Arc]
         I --> J[learn_10_lifetimes]

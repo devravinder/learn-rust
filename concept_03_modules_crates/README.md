@@ -1,4 +1,4 @@
-# learn_07_modules_crates — Modules, Paths, Visibility
+# concept_03_modules_crates — Modules, Paths, Visibility
 
 How Rust organizes code within a crate, and how crates relate.
 
@@ -6,8 +6,8 @@ How Rust organizes code within a crate, and how crates relate.
 
 | # | Binary | Concept | Analogy |
 | --- | --- | --- | --- |
-| 01 | `learn_07_01_modules` | `mod`, `pub`, `use`, `super::` | TS namespaces / Java packages |
-| 02 | `learn_07_02_file_modules` | modules split across files | one class per file |
+| 01 | `concept_03_01_modules` | `mod`, `pub`, `use`, `super::` | TS namespaces / Java packages |
+| 02 | `concept_03_02_file_modules` | modules split across files | one class per file |
 
 ## Vocabulary
 
@@ -19,9 +19,9 @@ How Rust organizes code within a crate, and how crates relate.
 
 ```mermaid
 graph TD
-    W[workspace] --> P1[package: learn_07_modules_crates]
-    P1 --> C1[binary crate: learn_07_01_modules]
-    P1 --> C2[binary crate: learn_07_02_file_modules]
+    W[workspace] --> P1[package: concept_03_modules_crates]
+    P1 --> C1[binary crate: concept_03_01_modules]
+    P1 --> C2[binary crate: concept_03_02_file_modules]
     C2 --> M[mod mathutil]
     M --> G[mod geometry]
 ```

@@ -1,4 +1,4 @@
-// mathutil.rs — a file-based module for learn_07_02_file_modules.
+// mathutil.rs — a file-based module for concept_03_02_file_modules.
 pub fn add(a: i32, b: i32) -> i32 {
     a + b
 }

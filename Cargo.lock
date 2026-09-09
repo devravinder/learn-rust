@@ -293,6 +293,10 @@ name = "concept_02_ownership"
 version = "0.1.0"
 
 [[package]]
+name = "concept_03_modules_crates"
+version = "0.1.0"
+
+[[package]]
 name = "cpufeatures"
 version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -972,10 +976,6 @@ dependencies = [
  "anyhow",
  "thiserror",
 ]
-
-[[package]]
-name = "learn_07_modules_crates"
-version = "0.1.0"
 
 [[package]]
 name = "learn_08_closures_iterators"
