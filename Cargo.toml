@@ -33,6 +33,7 @@ members = [
     "learn_11_concurrency",
     "learn_12_async_tokio",
     "learn_13_macros",
+    "learn_13_proc_macro",
     "learn_14_unsafe_ffi",
     "proj_03_web_api_axum",
     "proj_04_grpc",

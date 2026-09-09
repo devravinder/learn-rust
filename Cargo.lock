@@ -1003,6 +1003,17 @@ dependencies = [
 [[package]]
 name = "learn_13_macros"
 version = "0.1.0"
+dependencies = [
+ "learn_13_proc_macro",
+]
+
+[[package]]
+name = "learn_13_proc_macro"
+version = "0.1.0"
+dependencies = [
+ "quote",
+ "syn 2.0.119",
+]
 
 [[package]]
 name = "learn_14_unsafe_ffi"

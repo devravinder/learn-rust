@@ -2,13 +2,40 @@
 
 Macros generate code at compile time, before type checking. They enable things
 functions can't: variadic arguments, custom syntax, and auto-implemented traits.
+You spot a macro by the `!` at the call site (`println!`, `vec!`, `assert_eq!`).
+
+This folder follows the order of the
+[Rust by Example — Macros](https://doc.rust-lang.org/stable/rust-by-example/macros.html)
+chapter, then finishes with procedural macros.
 
 ## Concepts
 
-| # | Binary | Concept |
-| --- | --- | --- |
-| 01 | `learn_13_01_macro_rules` | declarative `macro_rules!` (pattern-based) |
-| 02 | `learn_13_02_derive_and_builtin` | derive (procedural) macros + built-ins |
+| # | Binary | Concept | RBE section |
+| --- | --- | --- | --- |
+| 01 | `learn_13_01_macro_rules` | basics of `macro_rules!` (match on syntax) | Syntax |
+| 02 | `learn_13_02_designators` | capture syntax with `$name:designator` | Designators |
+| 03 | `learn_13_03_overload` | multiple rules / custom syntax | Overload |
+| 04 | `learn_13_04_variadic` | variadic macros with `$( ... )*` | Repeat |
+| 05 | `learn_13_05_dsl` | a tiny DSL (`calculate! { eval ... }`) | DSL |
+| 06 | `learn_13_06_dry` | generate whole `fn`s + tests; `tt` designator | DRY |
+| 07 | `learn_13_07_derive_and_builtin` | derive (procedural) macros + built-ins | — |
+| 08 | `learn_13_08_proc_macro_use` | USE a custom `#[derive(Hello)]` proc-macro | — |
+
+```bash
+cargo run --bin learn_13_01_macro_rules
+cargo run --bin learn_13_02_designators
+cargo run --bin learn_13_03_overload
+cargo run --bin learn_13_04_variadic
+cargo run --bin learn_13_05_dsl
+cargo run  --bin learn_13_06_dry   # and: cargo test --bin learn_13_06_dry
+cargo run --bin learn_13_07_derive_and_builtin
+cargo run --bin learn_13_08_proc_macro_use
+```
+
+> The custom derive macro itself lives in a **separate crate**,
+> [`learn_13_proc_macro`](../learn_13_proc_macro/src/lib.rs), because proc-macro
+> crates compile into a compiler plugin and cannot live in `src/bin/`. Lesson 08
+> is the *consumer*; that crate is the *implementation*.
 
 ## Two macro families
 
@@ -23,8 +50,17 @@ graph TD
 
 ## Key points
 
-- **Declarative (`macro_rules!`)**: match on token patterns and expand. Supports
-  repetition `$( ... )*` for variadic input (e.g. how `vec!` works).
+- **Declarative (`macro_rules!`)**: works like a `match`, but matches on token
+  patterns instead of values. Each rule is `(pattern) => { expansion };`.
+- **Designators** name what you capture: `expr`, `ident`, `ty`, `stmt`, `block`,
+  `pat`, `literal`, `path`, `tt`. Use `stringify!` to turn a token into text.
+- **Overloading**: several rules, tried top-to-bottom; the pattern can contain
+  literal tokens (e.g. `; and`) to build custom syntax.
+- **Repetition** `$( ... ),*` / `+` / `?` gives variadic input — this is how
+  `vec!` works. Macros can also recurse (see `find_min!`).
+- **DRY / code-gen**: a macro can define whole `fn`s (even `#[test]` fns) from a
+  few tokens, and can call other macros. The `tt` (token tree) designator
+  captures operators like `+=` that aren't an `expr` or `ident` (see `op!`).
 - **Procedural**: actual Rust code that transforms a token stream. This is what
   `#[derive(Debug)]`, `#[tokio::main]`, and framework attributes (`#[get("/")]`)
   are. Writing your own needs a `proc-macro = true` crate with `syn` + `quote`.
