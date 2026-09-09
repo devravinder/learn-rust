@@ -1,5 +1,5 @@
-// learn_12_01_async_await — async/await with the Tokio runtime.
-// Run: cargo run --bin learn_12_01_async_await
+// concept_13_01_async_await — async/await with the Tokio runtime.
+// Run: cargo run --bin concept_13_01_async_await
 // Very familiar from JS: async fn returns a Future (like a Promise); .await drives
 // it. #[tokio::main] sets up the runtime (like Node's event loop) around main.
 use tokio::time::{Duration, sleep};

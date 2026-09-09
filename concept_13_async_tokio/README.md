@@ -1,4 +1,4 @@
-# learn_12_async_tokio — Async/Await with Tokio
+# concept_13_async_tokio — Async/Await with Tokio
 
 Asynchronous, non-blocking concurrency. If you know `async`/`await` and the Node
 event loop, this will feel familiar — Tokio is the runtime that drives it.
@@ -7,9 +7,9 @@ event loop, this will feel familiar — Tokio is the runtime that drives it.
 
 | # | Binary | Concept | JS analogy |
 | --- | --- | --- | --- |
-| 01 | `learn_12_01_async_await` | `async fn`, `.await`, `#[tokio::main]` | `async`/`await`, event loop |
-| 02 | `learn_12_02_tasks` | `join!`, `tokio::spawn` | `Promise.all`, background tasks |
-| 03 | `learn_12_03_async_channels` | `tokio::sync::mpsc` | async event queue |
+| 01 | `concept_13_01_async_await` | `async fn`, `.await`, `#[tokio::main]` | `async`/`await`, event loop |
+| 02 | `concept_13_02_tasks` | `join!`, `tokio::spawn` | `Promise.all`, background tasks |
+| 03 | `concept_13_03_async_channels` | `tokio::sync::mpsc` | async event queue |
 
 ## Threads vs async
 

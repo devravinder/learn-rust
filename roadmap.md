@@ -102,7 +102,7 @@ Cargo package with runnable examples under `src/bin/`.
 - Mutex
 - Arc
 
-### 13 — Async (Tokio)  ·  _folder: (pending)_
+### 13 — Async (Tokio)  ·  [`concept_13_async_tokio`](concept_13_async_tokio/)
 - async / await
 - tasks
 - async channels

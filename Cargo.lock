@@ -337,6 +337,13 @@ name = "concept_12_concurrency"
 version = "0.1.0"
 
 [[package]]
+name = "concept_13_async_tokio"
+version = "0.1.0"
+dependencies = [
+ "tokio",
+]
+
+[[package]]
 name = "cpufeatures"
 version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -992,13 +999,6 @@ name = "itoa"
 version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682"
-
-[[package]]
-name = "learn_12_async_tokio"
-version = "0.1.0"
-dependencies = [
- "tokio",
-]
 
 [[package]]
 name = "learn_13_macros"

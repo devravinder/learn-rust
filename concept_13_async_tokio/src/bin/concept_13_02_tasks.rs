@@ -1,5 +1,5 @@
-// learn_12_02_tasks — run futures concurrently with join! and spawn.
-// Run: cargo run --bin learn_12_02_tasks
+// concept_13_02_tasks — run futures concurrently with join! and spawn.
+// Run: cargo run --bin concept_13_02_tasks
 // join! awaits multiple futures at once (like Promise.all). spawn runs a task in
 // the background on the runtime's thread pool.
 use tokio::time::{Duration, sleep};

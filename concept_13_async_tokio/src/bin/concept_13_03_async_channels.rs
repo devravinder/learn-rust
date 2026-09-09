@@ -1,5 +1,5 @@
-// learn_12_03_async_channels — async message passing with tokio::mpsc.
-// Run: cargo run --bin learn_12_03_async_channels
+// concept_13_03_async_channels — async message passing with tokio::mpsc.
+// Run: cargo run --bin concept_13_03_async_channels
 // Like std mpsc but await-able and used between async tasks.
 use tokio::sync::mpsc;
 
