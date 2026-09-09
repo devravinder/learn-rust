@@ -1,5 +1,5 @@
-// learn_11_01_threads — OS threads with std::thread.
-// Run: cargo run --bin learn_11_01_threads
+// concept_12_01_threads — OS threads with std::thread.
+// Run: cargo run --bin concept_12_01_threads
 // spawn returns a JoinHandle; join() waits. `move` gives the thread its own data.
 
 /*

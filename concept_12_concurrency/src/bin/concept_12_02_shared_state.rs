@@ -1,5 +1,5 @@
-// learn_11_02_shared_state — share mutable state with Arc<Mutex<T>>.
-// Run: cargo run --bin learn_11_02_shared_state
+// concept_12_02_shared_state — share mutable state with Arc<Mutex<T>>.
+// Run: cargo run --bin concept_12_02_shared_state
 // Arc = shared ownership across threads; Mutex = one-at-a-time mutation.
 use std::sync::{Arc, Mutex};
 use std::thread;

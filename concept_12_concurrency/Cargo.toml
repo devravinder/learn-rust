@@ -1,5 +1,5 @@
 [package]
-name = "learn_11_concurrency"
+name = "concept_12_concurrency"
 version = "0.1.0"
 edition = "2024"
 

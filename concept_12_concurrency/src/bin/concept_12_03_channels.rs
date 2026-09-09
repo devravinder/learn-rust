@@ -1,5 +1,5 @@
-// learn_11_03_channels — message passing with mpsc channels.
-// Run: cargo run --bin learn_11_03_channels
+// concept_12_03_channels — message passing with mpsc channels.
+// Run: cargo run --bin concept_12_03_channels
 // "Do not communicate by sharing memory; share memory by communicating."
 // mpsc = multi-producer, single-consumer. Like a Go channel / an event queue.
 use std::sync::mpsc;

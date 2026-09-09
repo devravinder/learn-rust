@@ -1,4 +1,4 @@
-# learn_11_concurrency — Threads, Shared State, Channels
+# concept_12_concurrency — Threads, Shared State, Channels
 
 Rust's "fearless concurrency": the ownership/borrow rules that felt strict in
 single-threaded code are exactly what prevent data races across threads — at
@@ -8,9 +8,9 @@ compile time.
 
 | # | Binary | Concept | Analogy |
 | --- | --- | --- | --- |
-| 01 | `learn_11_01_threads` | `thread::spawn`, `join` | `Thread` / worker |
-| 02 | `learn_11_02_shared_state` | `Arc<Mutex<T>>` | synchronized shared variable |
-| 03 | `learn_11_03_channels` | `mpsc` message passing | Go channels / event queue |
+| 01 | `concept_12_01_threads` | `thread::spawn`, `join` | `Thread` / worker |
+| 02 | `concept_12_02_shared_state` | `Arc<Mutex<T>>` | synchronized shared variable |
+| 03 | `concept_12_03_channels` | `mpsc` message passing | Go channels / event queue |
 
 ## Two ways to coordinate
 

@@ -58,7 +58,7 @@ graph TD
         J --> P2[proj_02_file_parser<br/>CSV/JSON]
     end
     subgraph Advanced
-        P2 --> K[learn_11_concurrency<br/>threads, Mutex, channels]
+        P2 --> K[concept_12_concurrency<br/>threads, Mutex, channels]
         K --> L[learn_12_async_tokio<br/>async/await, Tokio]
         L --> M[learn_13_macros]
         M --> N[learn_14_unsafe_ffi]

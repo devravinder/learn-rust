@@ -31,7 +31,7 @@ members = [
     "concept_11_smart_pointers",
     "concept_10_lifetimes",
     "proj_02_file_parser",
-    "learn_11_concurrency",
+    "concept_12_concurrency",
     "learn_12_async_tokio",
     "learn_13_macros",
     "learn_13_proc_macro",

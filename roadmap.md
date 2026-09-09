@@ -95,7 +95,7 @@ Cargo package with runnable examples under `src/bin/`.
 - Arc (Atomic Reference Count) — multi-thread env
 - Mutex — multi-thread env
 
-### 12 — Concurrency  ·  _folder: (pending)_
+### 12 — Concurrency  ·  [`concept_12_concurrency`](concept_12_concurrency/)
 - threads
   - scoped threads
 - channels
