@@ -49,7 +49,7 @@ graph TD
     subgraph Intermediate
         C --> D[learn_04_collections_generics<br/>Vec, HashMap, generics]
         D --> E[learn_05_traits<br/>traits ~ interfaces]
-        E --> F[learn_06_error_handling<br/>Result, ?, thiserror, anyhow]
+        E --> F[concept_05_error_handling<br/>Result, ?, thiserror, anyhow]
         F --> P1[proj_01_cli_todo<br/>clap + serde]
         P1 --> G[concept_03_modules_crates]
         G --> H[learn_08_closures_iterators]

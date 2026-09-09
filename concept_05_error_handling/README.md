@@ -1,4 +1,4 @@
-# learn_06_error_handling — Result, ?, panic, thiserror, anyhow
+# concept_05_error_handling — Result, ?, panic, thiserror, anyhow
 
 Rust has no exceptions. Recoverable errors are values (`Result`); truly
 unrecoverable bugs use `panic!`.
@@ -7,10 +7,10 @@ unrecoverable bugs use `panic!`.
 
 | # | Binary | Concept | Analogy |
 | --- | --- | --- | --- |
-| 01 | `learn_06_01_result` | `Result<T,E>`, `?` operator | `try/catch` in the type system |
-| 02 | `learn_06_02_panic` | `panic!` vs recoverable errors | unchecked exception vs handled |
-| 03 | `learn_06_03_thiserror` | custom error enums (libraries) | custom `Exception` classes |
-| 04 | `learn_06_04_anyhow` | catch-all errors (apps) | generic `catch (e)` |
+| 01 | `concept_05_01_result` | `Result<T,E>`, `?` operator | `try/catch` in the type system |
+| 02 | `concept_05_02_panic` | `panic!` vs recoverable errors | unchecked exception vs handled |
+| 03 | `concept_05_03_thiserror` | custom error enums (libraries) | custom `Exception` classes |
+| 04 | `concept_05_04_anyhow` | catch-all errors (apps) | generic `catch (e)` |
 
 ## Choosing an approach
 

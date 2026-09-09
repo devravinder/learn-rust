@@ -1,5 +1,5 @@
-// learn_06_04_anyhow — easy error handling for applications.
-// Run: cargo run --bin learn_06_04_anyhow
+// concept_05_04_anyhow — easy error handling for applications.
+// Run: cargo run --bin concept_05_04_anyhow
 // anyhow::Result<T> = Result<T, anyhow::Error>: any error type works with `?`.
 // Use in apps/main; use thiserror in libraries you publish.
 use anyhow::{Context, Result, bail};

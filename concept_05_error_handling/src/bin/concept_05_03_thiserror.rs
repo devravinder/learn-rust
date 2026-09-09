@@ -1,5 +1,5 @@
-// learn_06_03_thiserror — custom error types with #[derive(Error)].
-// Run: cargo run --bin learn_06_03_thiserror
+// concept_05_03_thiserror — custom error types with #[derive(Error)].
+// Run: cargo run --bin concept_05_03_thiserror
 // thiserror is for LIBRARIES: define a precise error enum with messages + From.
 use thiserror::Error;
 

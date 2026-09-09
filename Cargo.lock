@@ -301,6 +301,14 @@ name = "concept_04_structs_enums"
 version = "0.1.0"
 
 [[package]]
+name = "concept_05_error_handling"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "thiserror",
+]
+
+[[package]]
 name = "cpufeatures"
 version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -968,14 +976,6 @@ version = "0.1.0"
 [[package]]
 name = "learn_05_traits"
 version = "0.1.0"
-
-[[package]]
-name = "learn_06_error_handling"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "thiserror",
-]
 
 [[package]]
 name = "learn_08_closures_iterators"

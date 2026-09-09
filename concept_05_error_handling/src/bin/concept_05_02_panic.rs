@@ -1,5 +1,5 @@
-// learn_06_02_panic — panic! is for unrecoverable bugs, not normal errors.
-// Run: cargo run --bin learn_06_02_panic
+// concept_05_02_panic — panic! is for unrecoverable bugs, not normal errors.
+// Run: cargo run --bin concept_05_02_panic
 // panic! aborts the current thread (like an unchecked exception you don't catch).
 // Prefer Result for expected failures; reserve panic for "this should never happen".
 fn main() {

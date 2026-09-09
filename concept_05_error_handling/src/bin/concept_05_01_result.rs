@@ -1,5 +1,5 @@
-// learn_06_01_result — Result<T, E> and the ? operator.
-// Run: cargo run --bin learn_06_01_result
+// concept_05_01_result — Result<T, E> and the ? operator.
+// Run: cargo run --bin concept_05_01_result
 // Result { Ok(T), Err(E) } makes errors explicit in the type (vs try/catch).
 // `?` returns early with the Err, otherwise unwraps the Ok. Like `throw` propagation.
 use std::num::ParseIntError;

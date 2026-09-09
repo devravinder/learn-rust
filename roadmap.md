@@ -47,7 +47,7 @@ Cargo package with runnable examples under `src/bin/`.
 - Option
 - pattern matching
 
-### 05 — Error Handling  ·  _folder: (pending)_
+### 05 — Error Handling  ·  [`concept_05_error_handling`](concept_05_error_handling/)
 > Placed early: the biggest mindset shift for exception-based (try/catch) devs.
 - Result
 - panic
