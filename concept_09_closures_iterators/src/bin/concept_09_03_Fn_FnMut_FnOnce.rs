@@ -1,4 +1,4 @@
-
+#![allow(unused)]
 /*
  Closure traits:-
   Fn, FnMut, FnOnce

@@ -1,3 +1,4 @@
+#![allow(unused)]
 // to convert one type(struct) to another
 // do value-to-value conversions
 // in Rust ( in docs ) Sized means ...Types with a constant size known at compile time.
