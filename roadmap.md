@@ -83,7 +83,7 @@ Cargo package with runnable examples under `src/bin/`.
   - generic type vs associated type
 - function pointers
 
-### 10 — Lifetimes  ·  _folder: (pending)_
+### 10 — Lifetimes  ·  [`concept_10_lifetimes`](concept_10_lifetimes/)
 - lifetimes
 - struct lifetimes
 

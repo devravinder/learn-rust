@@ -1,5 +1,5 @@
-// learn_10_02_struct_lifetimes — structs that hold references.
-// Run: cargo run --bin learn_10_02_struct_lifetimes
+// concept_10_02_struct_lifetimes — structs that hold references.
+// Run: cargo run --bin concept_10_02_struct_lifetimes
 // A struct holding a reference must declare a lifetime: the struct can't outlive
 // the data it borrows.
 struct Excerpt<'a> {

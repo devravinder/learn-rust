@@ -29,7 +29,7 @@ members = [
     "concept_03_modules_crates",
     "concept_09_closures_iterators",
     "learn_09_smart_pointers",
-    "learn_10_lifetimes",
+    "concept_10_lifetimes",
     "proj_02_file_parser",
     "learn_11_concurrency",
     "learn_12_async_tokio",

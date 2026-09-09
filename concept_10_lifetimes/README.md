@@ -1,4 +1,4 @@
-# learn_10_lifetimes — Lifetimes
+# concept_10_lifetimes — Lifetimes
 
 Lifetimes are how the borrow checker proves references never outlive the data
 they point to. They are compile-time only — zero runtime cost.
@@ -7,8 +7,9 @@ they point to. They are compile-time only — zero runtime cost.
 
 | # | Binary | Concept |
 | --- | --- | --- |
-| 01 | `learn_10_01_lifetimes` | `'a` on functions, elision |
-| 02 | `learn_10_02_struct_lifetimes` | structs that hold references |
+| 01 | `concept_10_01_lifetimes` | `'a` on functions, elision |
+| 02 | `concept_10_02_struct_lifetimes` | structs that hold references |
+| 03 | `concept_10_03_lifetime_advanced` | lifetimes, a deeper look |
 
 ## Mental model
 

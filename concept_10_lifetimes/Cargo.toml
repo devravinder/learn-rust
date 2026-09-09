@@ -1,5 +1,5 @@
 [package]
-name = "learn_10_lifetimes"
+name = "concept_10_lifetimes"
 version = "0.1.0"
 edition = "2024"
 
