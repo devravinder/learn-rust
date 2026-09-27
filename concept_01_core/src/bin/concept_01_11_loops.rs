@@ -33,7 +33,7 @@ fn main() {
     }
 
     // labeled break
-    'outer: for a in 0..3 {
+    'outer: for a in 0..3 { // ***
         for b in 0..3 {
             if a + b == 3 {
                 println!("break outer at a={a} b={b}");

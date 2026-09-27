@@ -3,7 +3,7 @@ use std::collections::HashSet;
 fn main(){
     let mut scores: HashSet<i32> = HashSet::new(); // stores references
 
-    let inserted = scores.insert(1);
+    let inserted = scores.insert(1); // t=return bool
     println!("inserted:{inserted}");
 
     let inserted = scores.insert(1);

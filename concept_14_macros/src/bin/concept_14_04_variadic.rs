@@ -65,4 +65,17 @@ fn main() {
 
     let v: Vec<i32> = my_vec![1, 2, 3, 4, 5,]; // tailing comma
     println!("my_vec = {v:?}");
+
+    // macros can be called with () or [] or {} // *** 
+
+    let v = my_vec![1,2,3];
+    println!("v={v:?}");
+    //or 
+    let v = my_vec!{1,2,3};
+    println!("v={v:?}");
+
+    // or 
+    let v = my_vec!(1,2,3);
+    println!("v={v:?}");
+
 }

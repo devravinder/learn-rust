@@ -25,7 +25,7 @@ fn add(a: i32, b: i32) -> i32 {
 
 fn classify(n: i32) -> &'static str { // 'static = entire program life time ( like static ) // & -> is for reference
     if n < 0 {
-        return "negative"; // early return
+        return "negative"; // early return  // ***
     }
     if n == 0 { "zero" } else { "positive" }
 }

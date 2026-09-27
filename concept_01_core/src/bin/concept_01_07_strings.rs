@@ -14,6 +14,24 @@ fn main() {
     let s1 = String::from("Hello, ");
     let s2 = String::from("world!");
     let s3 = s1 + &s2; // note s1 has been moved here and can no longer be used
+    /*
+     why &s2  ...why not just s2
+     because the + operator for String is defined to take the right-hand side as &str, not String.
+     Also + takes ownership of the left-hand String (it consumes s1).
+
+     ---
+      impl Add<&str> for String {
+       type Output = String;
+       fn add(self, other: &str) -> String { /* ... */ }
+     }
+     
+     So the RHS must be something that can be borrowed as &str.
+
+     Writing &s2 produces a &String, which is deref-coerced to &str automatically
+
+
+     */
+
     println!("s3:{s3}");
 
 

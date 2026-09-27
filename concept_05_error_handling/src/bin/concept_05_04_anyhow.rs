@@ -23,5 +23,7 @@ fn main() -> Result<()> {
     if let Err(e) = load_setting("oops") {
         println!("error: {e:#}"); // {:#} prints the full context chain
     }
-    Ok(())
+    println!("empty: {:?}", load_setting(""));
+    
+    Ok(()) // return type for main method
 }

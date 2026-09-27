@@ -139,7 +139,7 @@ fn main() {
     io::stdin().read_line(&mut guess).expect("read failed");
     let guess: i32 = guess.trim().parse().expect("invalid number");
 
-    println!("-----------with compare-------");
+    println!("-----------with compare-------");// ***
 
     let message = match guess.cmp(&secret) {
         Ordering::Less => "Too small!",

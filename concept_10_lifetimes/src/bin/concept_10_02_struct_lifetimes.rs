@@ -16,7 +16,7 @@ fn main() {
     let novel = String::from("Call me Ravinder. Some years ago...");
     let first_sentence = novel.split('.').next().unwrap();
 
-    let e = Excerpt { part: first_sentence }; // e borrows from `novel`
+    let e = Excerpt { part: first_sentence }; // e borrows from `novel` // ***
     println!("excerpt: {}", e.part());
-    // `e` must not outlive `novel` — the compiler enforces it.
+    // `e` must not outlive `novel` — the compiler enforces it. // ***
 }

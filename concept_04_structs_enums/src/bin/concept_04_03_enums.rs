@@ -21,7 +21,7 @@ enum Shape {
 
 impl Shape {
     fn area(&self) -> f64 {
-        match self {
+        match self { // ***
             Shape::Circle(r) => std::f64::consts::PI * r * r,
             Shape::Rectangle(w, h) => w * h,
             Shape::Triangle { base, height } => 0.5 * base * height,
@@ -52,6 +52,6 @@ fn main() {
         Shape::Multi(1.0, 2.0, 3.0, 4.0)
     ];
     for s in &shapes {
-        println!("{s:?} area = {:.2}", s.area()); // {:.2} // two decimals
+        println!("{s:?} area = {:.2}", s.area()); // {:.2} // two decimals // ***
     }
 }

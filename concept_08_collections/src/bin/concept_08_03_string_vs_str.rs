@@ -18,7 +18,7 @@ fn main() {
     println!("{joined}");
 
     // Split / collect.
-    let parts: Vec<&str> = "a,b,c".split(',').collect();
+    let parts: Vec<&str> = "a,b,c".split(',').collect(); // ***
     println!("{parts:?}");
     println!("rejoined = {}", parts.join("-"));
 }

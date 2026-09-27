@@ -10,7 +10,7 @@ struct Color {
     b: u8,
 }
 
-// Manual Display -> enables {} and .to_string().
+// Manual Display -> enables {} and .to_string(). // ***
 impl fmt::Display for Color {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "#{:02X}{:02X}{:02X}", self.r, self.g, self.b)

@@ -1,7 +1,7 @@
 #![allow(unused)]
 /*
  Closure traits:-
-  Fn, FnMut, FnOnce
+  Fn, FnMut, FnOnce // ***
 
     /*
      Closures can capture variables by
@@ -60,11 +60,11 @@ fn main(){
     
     // capture by value
     let v = String::from("Rust");  // ownership borrowed
-    let greet = move || println!("fn once {}", v);
+    let greet = move || println!("fn once {}", v); // ***
 
     f_fn_once(greet);
 
-    // f_fn_once(greet); // error
+    // f_fn_once(greet); // error // ***
     // println!(" name: {}", name); error // ownership is moved
 
 

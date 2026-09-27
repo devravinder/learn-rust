@@ -115,3 +115,9 @@ See [`setup.md`](setup.md).
 ## Reference
 
 - [Smart Contract Programmer](https://www.youtube.com/watch?v=wq56EAYZqGg&list=PLO5VPQH6OWdXR8NlZt0jRbC39W_IyzS-v&index=1)
+
+## Yet to Add
+
+- Strings modules
+- arrays ( slices )
+- collections

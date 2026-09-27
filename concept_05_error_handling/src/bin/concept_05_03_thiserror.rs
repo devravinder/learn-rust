@@ -19,7 +19,7 @@ fn parse_port(s: &str) -> Result<i32, ConfigError> {
         return Err(ConfigError::Empty);
     }
     let port: i32 = s.parse()?;
-    if !(1..=65535).contains(&port) {
+    if !(1..=65535).contains(&port) { // ***
         return Err(ConfigError::OutOfRange(port));
     }
     Ok(port)

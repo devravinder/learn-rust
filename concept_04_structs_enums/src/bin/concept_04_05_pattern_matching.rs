@@ -17,7 +17,7 @@ fn main() {
     for n in [2, 3, 4, 9] {
         let kind = match n {
             2 | 3 | 5 | 7 => "prime-ish",
-            x if x % 2 == 0 => "even",
+            x if x % 2 == 0 => "even", // ***
             _ => "other",
         };
         println!("{n} -> {kind}");

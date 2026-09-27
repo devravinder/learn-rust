@@ -9,7 +9,7 @@ fn main(){
 
 //   println!("add:{}", add(k,l)); error ... we can't pass reference
 
-    println!("add:{}", add(*k, *l));
+    println!("add:{}", add(*k, *l));// ***
 
 
   let m = *k; // de-refeence  = remove reference & get the original

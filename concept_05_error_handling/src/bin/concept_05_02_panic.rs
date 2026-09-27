@@ -10,7 +10,7 @@ fn main() {
     // Guard against a known bad state explicitly.
     let denom = 2;
     if denom == 0 {
-        panic!("division by zero"); // unreachable here, shown for illustration
+        panic!("division by zero"); // unreachable here, shown for illustration // ***
     }
     println!("10 / {denom} = {}", 10 / denom);
 
@@ -21,7 +21,7 @@ fn main() {
 
 fn safe_div(a: i32, b: i32) -> Result<i32, String> {
     if b == 0 {
-        Err("cannot divide by zero".to_string())
+        Err("cannot divide by zero".to_string()) // ***
     } else {
         Ok(a / b)
     }

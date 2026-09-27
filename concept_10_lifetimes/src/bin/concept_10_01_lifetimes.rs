@@ -21,13 +21,13 @@ fn main() {
         result = longest(&s1, &s2);
         println!("longest = {result}"); // used while both are alive
     }
-    // Using `result` here would be an error if it pointed into s2 (dropped).
+    // Using `result` here would be an error if it pointed into s2 (dropped). // ***
 
     // Most code needs NO explicit lifetimes thanks to elision:
     println!("first word: {}", first_word("hello world"));
 }
 
-// Elided: compiler infers the output ties to the input, so no 'a needed.
+// Elided: compiler infers the output ties to the input, so no 'a needed. // ***
 fn first_word(s: &str) -> &str {
     s.split_whitespace().next().unwrap_or("")
 }

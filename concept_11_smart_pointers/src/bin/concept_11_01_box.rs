@@ -71,14 +71,14 @@ fn main() {
 
     let b = Box::new(i); // now value 1 stored on heap
 
-    let v = *b; // de-reference
+    let v = *b; // de-reference // ***
 
     println!("v:{}",v);
     println!("b:{b}"); // // auto-deref
 
 
     // A recursive linked list, only possible via Box.
-    let list = Cons(1, Box::new(Cons(2, Box::new(Cons(3, Box::new(Nil))))));
+    let list = Cons(1, Box::new(Cons(2, Box::new(Cons(3, Box::new(Nil)))))); // ***
     println!("list = {list:?}");
 
     // ex-2

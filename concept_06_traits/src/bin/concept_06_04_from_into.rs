@@ -23,7 +23,7 @@ struct Point {
     y: u32
 }
 
-impl From<(u32, u32)> for Point {
+impl From<(u32, u32)> for Point { // ***
     fn from(value: (u32, u32)) -> Self {
         Self { x: value.0, y: value.1 }
     }
@@ -36,7 +36,7 @@ fn main(){
   let t = (32,43);
   let point_1 = Point::from(t);
 
-  let point_2: Point = t.into();// explicity type declaration is needed...as we implemented `From`.. auto `into` will work
+  let point_2: Point = t.into(); // *** // explicity type declaration is needed...as we implemented `From`.. auto `into` will work
 
   println!("point_1: {point_1:?}");
   println!("point_2: {point_2:?}");

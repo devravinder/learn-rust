@@ -18,7 +18,7 @@ fn main() {
 
     // Common combinators (like optional chaining / defaults):
     println!("unwrap_or: {}", nothing.unwrap_or(0));
-    println!("map: {:?}", some_num.map(|n| n * 10)); // |n| is closure syntax // lamda / arrow function
+    println!("map: {:?}", some_num.map(|n| n * 10)); // |n| is closure syntax // lamda / arrow function // *** map
 
     // A function returning Option.
     println!("{:?}", first_even(&[1, 3, 4, 7]));

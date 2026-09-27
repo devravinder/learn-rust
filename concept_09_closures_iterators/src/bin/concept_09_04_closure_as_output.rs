@@ -14,7 +14,7 @@ fn f_fn()-> impl Fn(i32)->i32{
 
     move |x| x + v // move the ownership of closure
 }
-//  of v with 'move'...else after 1st call it'll be dropped...we can't call 2nd time....error
+// move the ownership of v with 'move'...else after 1st call it'll be dropped...we can't call 2nd time....error
 
 
 fn f_fn_string()-> impl Fn()->String{

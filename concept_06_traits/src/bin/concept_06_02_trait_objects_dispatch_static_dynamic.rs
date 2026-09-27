@@ -48,19 +48,19 @@ fn static_dispatch<T: Draw>(item: &T) {
 // Box is pointer that stores a value on the heap  ( instead of directly on the stack )
 // Box is pointer on heap
 // run time polymorphism
-fn render_all(items: &[Box<dyn Draw>]) {
+fn render_all(items: &[Box<dyn Draw>]) { // ***
     for item in items {
         println!("dyn: {}", item.draw());
     }
 }
 
-fn dynamic_diaptch(t: &dyn Draw){
+fn dynamic_diaptch(t: &dyn Draw){ // ***
   println!("dynamic_diaptch");
   t.draw();
 }
 
 /*
- &dyn vs Box
+ &dyn vs Box  // ***
 
  &dyn:-
    - value is only borrowed... ownership still stays in main method
@@ -107,6 +107,22 @@ fn main() {
     };
 
     println!("selected: {}", draw.draw());
+
+    /*
+    when to use & Dyn and when to use Box<dyn  T>
+
+    - Use &dyn Trait when you have a borrowed trait object (you don't own it).
+    - Use Box<dyn Trait> when you need an owned, heap‑allocated trait object (you do own it).
+    
+    When to use &dyn Trait
+
+    - You only need to temporarily borrow some value that implements the trait.
+    - You don't need to store the trait object long term or move ownership.
+    - Borrow semantics and lifetimes are acceptable (the referred value must outlive the borrow).
+    - You avoid heap allocation (the concrete value may still be on the stack or heap; &dyn is just a pointer + vtable).
+
+    
+     */
 
     println!("----------combined traits-------");
     let dog = Dog;

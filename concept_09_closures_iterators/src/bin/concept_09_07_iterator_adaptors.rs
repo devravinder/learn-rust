@@ -26,7 +26,7 @@ fn main(){
     //=== Zip
     // useful to iterate over two iterators ( vectors )
     let keys = vec!["a", "b", "c", "d"];
-    let values = vec![1,2,3,4];
+    let values = vec![1,2,3];
 
     // iterates to minimum length iterator...skips extra ( here "d" is skipped )
     let zipped: Vec<(&str, i32)> = keys.into_iter().zip(values.into_iter()).collect();
@@ -36,7 +36,7 @@ fn main(){
     let keys = vec!["a", "b", "c", "d"];
     let values = vec![1,2,3,4];
 
-    let zipped: HashMap<&str, i32> = keys.into_iter().zip(values.into_iter()).collect(); // rust auto converts
+    let zipped: HashMap<&str, i32> = keys.into_iter().zip(values.into_iter()).collect(); // rust auto converts // ***
 
     println!("zippe HashMap: {:?}", zipped); 
 

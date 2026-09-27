@@ -2,7 +2,9 @@
 // Run: cargo run --bin concept_01_04_constants
 // Like `static final` in Java. Type annotation required.
 fn main() {
-    const DEVELOPER_AGE: u32 = 30;
+    const DEVELOPER_AGE: u32 = 30; // re-declaration is not allowed
     const SECONDS_IN_HOUR: u32 = 60 * 60; // const expression
     println!("{DEVELOPER_AGE} {SECONDS_IN_HOUR}");
+    
+    //     const DEVELOPER_AGE: u32 = 60; // error
 }

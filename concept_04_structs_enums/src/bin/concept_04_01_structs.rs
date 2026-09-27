@@ -24,7 +24,7 @@ fn main() {
     // Struct update syntax: copy remaining fields from another instance.
     let u2 = User {
         name: String::from("Kiro"),
-        ..u // take age/active from u (moves non-Copy fields)
+        ..u // take age/active from u (moves non-Copy fields) // ***
     };
 
         // this works

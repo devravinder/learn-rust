@@ -7,7 +7,7 @@ fn main() {
     // map + filter + collect (adapters are lazy; collect() drives them).
     let evens_squared: Vec<i32> = nums
         .iter() // this produces reference to items -> &n
-        .filter(|&&n| n % 2 == 0) // filter() receives a reference to each item. ( so.. two references: one from filter() & one from iter())
+        .filter(|&&n| n % 2 == 0) // *** // filter() receives a reference to each item. ( so.. two references: one from filter() & one from iter())
         .map(|&n| n * n)// map receives the item directly ( so... only iter() produced reference )
         .collect();
     println!("evens squared: {evens_squared:?}");
@@ -23,7 +23,7 @@ fn main() {
     println!("product = {product}");
 
     // enumerate + take + chain.
-    for (i, n) in nums.iter().enumerate().take(3) {
+    for (i, n) in nums.iter().enumerate().take(3) { // ***
         println!("#{i} = {n}");
     }
 

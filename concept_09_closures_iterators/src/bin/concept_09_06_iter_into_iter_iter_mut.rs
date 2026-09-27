@@ -9,7 +9,7 @@ fn main(){
     let values = vec![1,2,3,4];
 
     /*
-    // Vec<T>
+    // Vec<T>   // ***
      iter(): borrows and returns a iterator that returns &T
 
      into_iter(): takes ownership and returns a iterator that may return T, &T or &mut T

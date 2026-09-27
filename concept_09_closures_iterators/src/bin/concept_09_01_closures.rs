@@ -52,12 +52,12 @@ fn main() {
     // Borrow mutable reference &T
 
     let mut s = "hello".to_string();
-    let mut f = || s+="world";
+    let mut f = || s+="world"; // ***
     f();
     println!(" s: {}", s);
 
 
-    // Take ownership of value T -> by move (takes ownership) — needed when returning/spawning.
+    // Take ownership of value T -> by move (takes ownership) — needed when returning/spawning. // ***
     let name = String::from("Rust");
     let greet = move || { // FnOnce type cunction = once time callable function
         println!("name {}", name);
@@ -79,7 +79,7 @@ fn main() {
     println!("count = {count}");
 
     // Returning a closure (boxed trait object) / accepting via generics.
-    let doubler = make_multiplier(2);
+    let doubler = make_multiplier(2); // ***
     println!("doubler(21) = {}", doubler(21));
 
 

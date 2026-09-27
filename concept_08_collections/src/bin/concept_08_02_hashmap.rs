@@ -37,7 +37,7 @@ fn main() {
     let text = "the cat the dog the bird";
     let mut freq: HashMap<&str, u32> = HashMap::new();
     for word in text.split_whitespace() {
-        *freq.entry(word).or_insert(0) += 1;
+        *freq.entry(word).or_insert(0) += 1; // ***
     }
     println!("freq = {freq:?}");
 }

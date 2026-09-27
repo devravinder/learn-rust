@@ -56,7 +56,7 @@ fn main() {
     let one = BoxCons(1, Box::new(&nil));
     let two = BoxCons(2, Box::new(&one));
 
-    /* // muliple ownser - not possible with simple Box  ( without lifetime)
+    /* // muliple owners - not possible with simple Box  ( without lifetime)
 
     let a = Cons(3, BoxCons::new(two));  // box taken ownership of list...so we can't use next time
     let b = Cons(4, BoxCons::new(two));  // error : value used here after move

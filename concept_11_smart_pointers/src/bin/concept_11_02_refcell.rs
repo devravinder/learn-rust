@@ -10,10 +10,10 @@ use std::rc::Rc;
 
   But
   Inter Mutability ( is a feature / concept )
-   - allows data mutation even though there immutable references to that data 
+   - allows data mutation even though there immutable references to that data  // ***
 
    - 'RefCell' 
-      - enables Inter Mutability
+      - enables Inter Mutability // ***
       - runtime error when borrowing rules are broken
           - there should be only one mutable reference at any time....else error
       - Single threded use
