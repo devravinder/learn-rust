@@ -1,3 +1,4 @@
+#![allow(unused)]
 // store.rs — data model + JSON file persistence for the todo app.
 use anyhow::{Context, Result};
 use serde::{Deserialize, Serialize};
@@ -21,7 +22,7 @@ impl Store {
     // Load from disk; return an empty store if the file doesn't exist yet.
     pub fn load(path: &Path) -> Result<Self> {
         if !path.exists() {
-            return Ok(Store::default());
+            return Ok(Store::default()); // ***
         }
         let data = fs::read_to_string(path)
             .with_context(|| format!("reading {}", path.display()))?;

@@ -1236,7 +1236,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "proj_01_cli_todo"
+name = "proj_01_todo_cli"
 version = "0.1.0"
 dependencies = [
  "anyhow",

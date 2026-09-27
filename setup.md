@@ -85,6 +85,11 @@
        "key": "ctrl+r ctrl+r",
        "command": "workbench.action.terminal.sendSequence",
        "args": { "text": "cargo run --bin ${fileBasenameNoExtension}\u000D" }
+     },
+     {
+       "key": "ctrl+r ctrl+m", // m = main
+       "command": "workbench.action.terminal.sendSequence",
+       "args": { "text": "cargo run" }
      }
   ```
 

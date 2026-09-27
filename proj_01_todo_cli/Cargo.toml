@@ -1,13 +1,14 @@
 [package]
-name = "proj_01_cli_todo"
+name = "proj_01_todo_cli"
 version = "0.1.0"
 edition = "2024"
+publish = ["artifactory-remote"]
 
-# Single named binary so `cargo run --bin proj_01_cli_todo` stays unique in the
-# workspace (keeps the VS Code shortcut convention consistent with the learn_* crates).
 [[bin]]
-name = "proj_01_cli_todo"
+name = "proj_01_todo_cli"
 path = "src/main.rs"
+
+
 
 [dependencies]
 clap = { workspace = true }        # CLI arg parsing (like commander/yargs)
