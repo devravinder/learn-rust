@@ -44,7 +44,7 @@ pub fn summarize(people: &[Person]) -> Summary {
     let avg_age = if count == 0 { 0.0 } else { sum_age as f64 / count as f64 };
     let oldest = people
         .iter()
-        .max_by_key(|p| p.age)
+        .max_by_key(|p| p.age) // ***
         .map(|p| p.name.clone());
     Summary { count, avg_age, oldest }
 }

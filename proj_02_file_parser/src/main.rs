@@ -2,6 +2,11 @@
 // Examples:
 //   cargo run --bin proj_02_file_parser -- data/people.csv
 //   cargo run --bin proj_02_file_parser -- data/people.csv --json
+/**
+    form this folder
+    cargo run  -- data/people.csv
+    cargo run  -- data/people.csv --json
+ */
 mod model;
 
 use anyhow::{Context, Result};
